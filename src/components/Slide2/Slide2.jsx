@@ -2,7 +2,7 @@ import React from 'react'
 
 const Slide2 = () => {
   return (
-    <div>Slide2</div>
+    <div className='mt-[110px]'>Slide2</div>
   )
 }
 
