@@ -33,7 +33,7 @@ const Slide1 = () => {
           <img src={left_tree} alt='left tree' className='h-24 lg:h-36 animate-left' />
         </div>
         <div >
-          <div className='w-36 h-36 lg:w-60 lg:h-60 rounded-full bg-red-500 animate-down'></div>
+          <div className='w-36 h-36 lg:w-60 lg:h-60 rounded-full bg-[#E51F24] animate-down'></div>
         </div>
         <div className='hidden md:flex mt-[-180px]'>
           <img src={right_tree} alt='right tree' className='h-24 lg:h-48 animate-right' />
@@ -44,7 +44,7 @@ const Slide1 = () => {
         <img
           src={mountain}
           alt='mountain'
-          className={` ${scrolled ? 'h-36' : 'h-24'} animate-up`}
+          className={` ${scrolled ? 'h-44' : 'h-40'} animate-up`}
           style={{
             transition: 'height 0.5s ease',
           }}

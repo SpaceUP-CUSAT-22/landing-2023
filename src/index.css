@@ -29,6 +29,9 @@ html, body {
     opacity: 0;
     transform: translateX(-100%);
   }
+  50% {
+    opacity: 1;
+  }
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -39,6 +42,9 @@ html, body {
   0% {
     opacity: 0;
     transform: translateX(100%);
+  }
+  50% {
+    opacity: 1;
   }
   100% {
     opacity: 1;
@@ -51,6 +57,9 @@ html, body {
     opacity: 0;
     transform: translateY(-100%);
   }
+  50% {
+    opacity: 1;
+  }
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -62,6 +71,9 @@ html, body {
     opacity: 0;
     transform: translateY(100%);
   }
+  50% {
+    opacity: 1;
+  }
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -72,34 +84,30 @@ html, body {
 
 .animate-left {
   animation-name: curtain-left;
-  animation-duration: 0.5s;
+  animation-duration: 1.7s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-  animation-delay: 0.50s;
 }
 
 .animate-right {
   animation-name: curtain-right;
-  animation-duration: 0.5s;
+  animation-duration: 1.7s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-  animation-delay: 0.50s;
 }
 
 .animate-down {
   animation-name: curtain-down;
-  animation-duration: 0.5s;
+  animation-duration: 1.7s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-  animation-delay: 0.50s;
 }
 
 .animate-up {
   animation-name: curtain-up;
-  animation-duration: 0.5s;
+  animation-duration: 1.7s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-  animation-delay: 0.50s;
 }
 
 .animate-shuttle {
