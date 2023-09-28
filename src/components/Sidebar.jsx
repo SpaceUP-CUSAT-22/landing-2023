@@ -3,6 +3,9 @@ import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import { useStateContext } from '../context/SateContext';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
+import CalendarTodayOutlinedIcon from '@mui/icons-material/CalendarTodayOutlined';
+import VolumeUpOutlinedIcon from '@mui/icons-material/VolumeUpOutlined';
+import AutoAwesomeOutlinedIcon from '@mui/icons-material/AutoAwesomeOutlined';
 
 const Sidebar = () => {
     const {slide, setSlide} = useStateContext()
@@ -19,13 +22,13 @@ const Sidebar = () => {
                 <HomeOutlinedIcon className={`${(slide != '#events' && slide != '#speakers' && slide != '#plan') ? 'text-red-600' : 'text-black'} md:!text-[40px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
             </a>
             <a href="#events" onClick={() => setSlide('#events')} className='flex items-center h-20'>
-                <HomeOutlinedIcon className={`${slide == '#events' ? 'text-red-600' : 'text-black'} md:!text-[40px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
+                <AutoAwesomeOutlinedIcon className={`${slide == '#events' ? 'text-red-600' : 'text-black'} md:!text-[35px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
             </a>
             <a href="#speakers" onClick={() => setSlide('#speakers')} className='flex items-center h-20'>
-                <HomeOutlinedIcon className={`${slide == '#speakers' ? 'text-red-600' : 'text-black'} md:!text-[40px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
+                <VolumeUpOutlinedIcon className={`${slide == '#speakers' ? 'text-red-600' : 'text-black'} md:!text-[35px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
             </a>
             <a href="#plan" onClick={() => setSlide('#plan')} className='flex items-center h-20'>
-                <HomeOutlinedIcon className={`${slide == '#plan' ? 'text-red-600' : 'text-black'} md:!text-[40px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
+                <CalendarTodayOutlinedIcon className={`${slide == '#plan' ? 'text-red-600' : 'text-black'} md:!text-[30px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
             </a>
         </div>
 
@@ -37,16 +40,16 @@ const Sidebar = () => {
         <div onClick={() => setToggle(false)} className='bg-white absolute w-screen px-10 flex flex-col justify-center items-center'>
             <div className='mt-[50%]'>
                 <a href="#home" onClick={() => setSlide('#home')} className='flex items-center h-20'>
-                    <HomeOutlinedIcon className={`${(slide != '#events' && slide != '#speakers' && slide != '#plan') ? 'text-red-600' : 'text-black'} md:!text-[40px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
+                    <HomeOutlinedIcon className={`${(slide != '#events' && slide != '#speakers' && slide != '#plan') ? 'text-red-600' : 'text-black'} !text-[30px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
                 </a>
                 <a href="#events" onClick={() => setSlide('#events')} className='flex items-center h-20'>
-                    <HomeOutlinedIcon className={`${slide == '#events' ? 'text-red-600' : 'text-black'} md:!text-[40px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
+                    <AutoAwesomeOutlinedIcon className={`${slide == '#events' ? 'text-red-600' : 'text-black'} !text-[30px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
                 </a>
                 <a href="#speakers" onClick={() => setSlide('#speakers')} className='flex items-center h-20'>
-                    <HomeOutlinedIcon className={`${slide == '#speakers' ? 'text-red-600' : 'text-black'} md:!text-[40px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
+                    <VolumeUpOutlinedIcon className={`${slide == '#speakers' ? 'text-red-600' : 'text-black'} !text-[30px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
                 </a>
                 <a href="#plan" onClick={() => setSlide('#plan')} className='flex items-center h-20'>
-                    <HomeOutlinedIcon className={`${slide == '#plan' ? 'text-red-600' : 'text-black'} md:!text-[40px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
+                    <CalendarTodayOutlinedIcon className={`${slide == '#plan' ? 'text-red-600' : 'text-black'} !text-[30px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
                 </a>
             </div>
         </div>
