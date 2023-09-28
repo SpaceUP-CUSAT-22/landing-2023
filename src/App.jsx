@@ -13,7 +13,7 @@ function App() {
         <div className={`${slide == '#events' ? 'bg-[#080605]' : 'bg-white'} fixed z-40 col-span-1 h-screen`}>
           <Sidebar />
         </div>
-        <div className="col-span-5 md:mt-0 mt-20">
+        <div className="col-span-5 md:mt-0 mt-20 ml-20">
           <BrowserRouter>
             <Routes>
               <Route element={<Home />} path="/" />

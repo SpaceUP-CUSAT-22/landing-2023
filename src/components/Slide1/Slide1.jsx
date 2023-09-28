@@ -4,6 +4,7 @@ import right_tree from '../../assets/right_tree.png'
 import mountain from '../../assets/landscape.png'
 import arch from '../../assets/arch.png'
 import shuttle from '../../assets/shuttle.png'
+import './style.css'
 
 
 

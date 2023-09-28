@@ -1,0 +1,27 @@
+.eventBox:nth-child(1){
+    background-image: url('../../assets/rect1.png');
+}
+
+.eventBox:nth-child(2){
+    background-image: url('../../assets/rect2.png');
+}
+
+.eventBox:nth-child(3){
+    background-image: url('../../assets/rect3.png');
+}
+
+.eventBox:nth-child(4){
+    background-image: url('../../assets/rect4.png');
+}
+
+.eventBox:nth-child(5){
+    background-image: url('../../assets/rect5.png');
+}
+
+.eventBox:nth-child(6){
+    background-image: url('../../assets/rect6.png');
+}
+
+.eventBox:nth-child(7){
+    background-image: url('../../assets/rect7.png');
+}

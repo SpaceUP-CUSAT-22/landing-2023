@@ -1,0 +1,122 @@
+@keyframes curtain-left {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes curtain-right {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes curtain-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes curtain-up {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+    
+  
+  
+  .animate-left {
+    animation-name: curtain-left;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+  .animate-right {
+    animation-name: curtain-right;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+  .animate-down {
+    animation-name: curtain-down;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+  .animate-up {
+    animation-name: curtain-up;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+  .animate-shuttle {
+    animation-name: curtain-up;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+  }
+  
+  
+  .enlarged {
+    transform-origin: top center;
+    transform: scaleY(1) scaleX(1.4); 
+    transition: transform 0.3s ease;
+    position: fixed;
+    bottom: 0;
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 1;
+      height: auto;
+    }
+    99% {
+      opacity: 0;
+      height: auto;
+    }
+    100% {
+      opacity: 0;
+      height: 0;
+    }
+  }
+  
+  .animate-ping {
+    animation: fadeInOut 1s forwards;
+    animation-delay: 0s;
+  }
