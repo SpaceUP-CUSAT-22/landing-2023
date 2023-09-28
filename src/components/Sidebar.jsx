@@ -17,7 +17,7 @@ const Sidebar = () => {
   return (
     <>
         {/* Laptop Navigation */}
-        <div className='bg-white px-5 mt-[100%] md:flex flex-col hidden'>
+        <div className='bg-white px-5 mt-[25vh] md:flex flex-col hidden'>
             <a href="#home" onClick={() => setSlide('#home')} className='flex items-center h-20'>
                 <HomeOutlinedIcon className={`${(slide != '#events' && slide != '#speakers' && slide != '#plan') ? 'text-red-600' : 'text-black'} md:!text-[40px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
             </a>

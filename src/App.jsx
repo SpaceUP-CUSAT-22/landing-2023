@@ -9,7 +9,7 @@ function App() {
     <>
       <div className="w-screen h-screen bg-black absolute z-50 animate-curtain animate-curtain ease-in-out"></div>
       <div className="grid grid-cols-6">
-        <div className="col-span-1 h-screen">
+        <div className="fixed col-span-1 h-screen">
           <Sidebar />
         </div>
         <div className="col-span-5 md:mt-0 mt-20">
