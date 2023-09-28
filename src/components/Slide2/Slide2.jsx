@@ -2,7 +2,9 @@ import React from 'react'
 
 const Slide2 = () => {
   return (
-    <div className='mt-[110px]'>Slide2</div>
+    <div id="events" className='h-screen absolute z-30'>
+      
+    </div>
   )
 }
 
