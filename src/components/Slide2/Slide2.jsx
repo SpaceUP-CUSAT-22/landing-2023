@@ -27,22 +27,22 @@ const Slide2 = () => {
     };
   }, []);
   return (
-    <div ref={componentRef} id="events" className='mt-20 h-[100%] absolute z-30'>
-      <div className='grid grid-cols-5'>
-        <div className='col-span-1 h-[100%] bg-black px-40 py-10'>
-          <h1 class="text-white japanese flex flex-col items-center mt-[20vh]">
-            <hr className='border-[1.5px] w-[100px] my-5' />
+    <div ref={componentRef} id="events" className='mt-20 h-[100%] absolute z-30 max-w-full overflow-hidden'>
+      <div className='grid md:grid-cols-5 grid-cols-1'>
+        <div className='col-span-1 h-[100%] bg-black md:px-40 py-10'>
+          <h1 class="text-white japanese flex justify-center md:flex-col items-center md:mt-[20vh]">
+            <hr className='border-[1.5px] md:rotate-0 rotate-90 md:w-[100px] w-[50px] my-5' />
             <span class="text-3xl">E</span>
             <span class="text-3xl">V</span>
             <span class="text-3xl">E</span>
             <span class="text-3xl">N</span>
             <span class="text-3xl">T</span>
             <span class="text-3xl">S</span>
-            <hr className='border-[1.5px] w-[100px] my-5' />
+            <hr className='border-[1.5px] md:rotate-0 rotate-90 md:w-[100px] w-[50px] my-5' />
           </h1>
         </div>
         <div className='bg-stone-950 w-screen h-[100%]'>
-          <div className='flex flex-wrap'>
+          <div className='flex md:flex-wrap max-w-full overflow-x-auto'>
             <div className={`eventBox flex items-center ${animate ? 'slideDown' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}>
               <h1 className='text-white text-3xl -rotate-90 japanese'>SPACEUP</h1>
             </div>
@@ -61,7 +61,7 @@ const Slide2 = () => {
             </div>
             <div className='bg-black h-[250px] w-[150px]'></div>
           </div>
-          <div className='flex flex-wrap'>
+          <div className='flex md:flex-wrap max-w-full overflow-x-auto'>
             <div className='bg-black h-[250px] w-[150px]'></div>
             <div className={`eventBox flex items-center ${animate ? 'slideUp' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}>
               <h1 className='text-white text-3xl -rotate-90 japanese'>CASSIOPIEA</h1>
@@ -80,7 +80,7 @@ const Slide2 = () => {
               <h1 className='text-[#828282] text-6xl -rotate-90 japanese'>2023</h1>
             </div>
           </div>
-          <div className='flex flex-wrap'>
+          <div className='flex md:flex-wrap max-w-full overflow-x-auto'>
             <div className='bg-black h-[250px] w-[150px] flex items-center border-l-[1px] border-r-[1.5px] border-[#4d4d4d]'>
               <h1 className='text-[#828282] text-6xl -rotate-90 japanese'>2019</h1>
             </div>
