@@ -24,16 +24,16 @@ const Sidebar = () => {
                 <HomeOutlinedIcon className={`${(slide != '#events' && slide != '#speakers' && slide != '#plan' && slide != '#images' && slide != '#info') ? 'text-red-600' : (slide == '#events') ? 'text-white' : 'text-black'} md:!text-[40px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
             </a>
             <a href="#events" onClick={() => setSlide('#events')} className='flex items-center h-20'>
-                <AutoAwesomeOutlinedIcon className={`${slide == '#events' ? 'text-red-600' : 'text-black'} md:!text-[35px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
+                <AutoAwesomeOutlinedIcon className={`${slide == '#events' ? 'text-red-600' : (slide == '#info') ? 'text-white' : 'text-black'} md:!text-[35px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
             </a>
             <a href="#speakers" onClick={() => setSlide('#speakers')} className='flex items-center h-20'>
-                <VolumeUpOutlinedIcon className={`${slide == '#speakers' ? 'text-red-600' : (slide == '#events') ? 'text-white' : 'text-black'} md:!text-[35px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
+                <VolumeUpOutlinedIcon className={`${slide == '#speakers' ? 'text-red-600' : (slide == '#events' || slide == '#info') ? 'text-white' : 'text-black'} md:!text-[35px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
             </a>
             <a href="#plan" onClick={() => setSlide('#plan')} className='flex items-center h-20'>
-                <CalendarTodayOutlinedIcon className={`${slide == '#plan' ? 'text-red-600' : (slide == '#events') ? 'text-white' : 'text-black'} md:!text-[30px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
+                <CalendarTodayOutlinedIcon className={`${slide == '#plan' ? 'text-red-600' : (slide == '#events' || slide == '#info') ? 'text-white' : 'text-black'} md:!text-[30px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
             </a>
             <a href="#images" onClick={() => setSlide('#images')} className='flex items-center h-20'>
-                <PanoramaOutlinedIcon className={`${slide == '#images' ? 'text-red-600' : (slide == '#events') ? 'text-white' : 'text-black'} md:!text-[30px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
+                <PanoramaOutlinedIcon className={`${slide == '#images' ? 'text-red-600' : (slide == '#events' || slide == '#info') ? 'text-white' : 'text-black'} md:!text-[30px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
             </a>
             <a href="#info" onClick={() => setSlide('#info')} className='flex items-center h-20'>
                 <InfoOutlinedIcon className={`${slide == '#info' ? 'text-red-600' : (slide == '#events') ? 'text-white' : 'text-black'} md:!text-[30px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
@@ -51,19 +51,19 @@ const Sidebar = () => {
                     <HomeOutlinedIcon className={`${(slide != '#events' && slide != '#speakers' && slide != '#plan' && slide != '#images' && slide != '#info') ? 'text-red-600' : (slide == '#events') ? 'text-white' : 'text-black'} !text-[30px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
                 </a>
                 <a href="#events" onClick={() => setSlide('#events')} className='flex items-center h-20'>
-                    <AutoAwesomeOutlinedIcon className={`${slide == '#events' ? 'text-red-600' : (slide == '#events') ? 'text-white' : 'text-black'} !text-[30px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
+                    <AutoAwesomeOutlinedIcon className={`${slide == '#events' ? 'text-red-600' : (slide == '#info') ? 'text-white' : 'text-black'} !text-[30px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
                 </a>
                 <a href="#speakers" onClick={() => setSlide('#speakers')} className='flex items-center h-20'>
-                    <VolumeUpOutlinedIcon className={`${slide == '#speakers' ? 'text-red-600' : (slide == '#events') ? 'text-white' : 'text-black'} !text-[30px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
+                    <VolumeUpOutlinedIcon className={`${slide == '#speakers' ? 'text-red-600' : (slide == '#events' || slide == '#info') ? 'text-white' : 'text-black'} !text-[30px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
                 </a>
                 <a href="#plan" onClick={() => setSlide('#plan')} className='flex items-center h-20'>
-                    <CalendarTodayOutlinedIcon className={`${slide == '#plan' ? 'text-red-600' : (slide == '#events') ? 'text-white' : 'text-black'} !text-[30px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
+                    <CalendarTodayOutlinedIcon className={`${slide == '#plan' ? 'text-red-600' : (slide == '#events' || slide == '#info') ? 'text-white' : 'text-black'} !text-[30px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
                 </a>
                 <a href="#images" onClick={() => setSlide('#images')} className='flex items-center h-20'>
-                    <PanoramaOutlinedIcon className={`${slide == '#images' ? 'text-red-600' : (slide == '#events') ? 'text-white' : 'text-black'} !text-[30px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
+                    <PanoramaOutlinedIcon className={`${slide == '#images' ? 'text-red-600' : (slide == '#events' || slide == '#info') ? 'text-white' : 'text-black'} !text-[30px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
                 </a>
                 <a href="#info" onClick={() => setSlide('#info')} className='flex items-center h-20'>
-                    <InfoOutlinedIcon className={`${slide == '#info' ? 'text-red-600' : (slide == '#events') ? 'text-white' : 'text-black'} !text-[30px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
+                    <InfoOutlinedIcon className={`${slide == '#info' ? 'text-red-600' : (slide == '#events' || slide == '#info') ? 'text-white' : 'text-black'} !text-[30px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
                 </a>
             </div>
         </div>
