@@ -31,3 +31,23 @@ html, body {
   animation-fill-mode: forwards;
   animation-delay: 0.15s;
 }
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+    height: auto;
+  }
+  99% {
+    opacity: 0;
+    height: auto;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+.animate-ping {
+  animation: fadeInOut 1s forwards;
+  animation-delay: 0s;
+}

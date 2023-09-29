@@ -15,7 +15,11 @@ export default {
             transform: 'translateX(-100%)',
           },
         }
-      }
+      },
+      backgroundImage: theme => ({
+        'Vector': "url('./assets/Vector.svg')",
+      }),
+      
     },
   },
   plugins: [],

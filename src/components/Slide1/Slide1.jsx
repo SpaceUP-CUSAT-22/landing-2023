@@ -29,35 +29,41 @@ const Slide1 = () => {
 
   return (
     <div id="home" className='h-screen overflow-hidden'>
-      <div className='fixed top-0 left-0 w-full h-3/4 flex flex-col md:flex-row justify-between items-center my-auto '>
+      <div className='fixed top-0 left-0 w-full h-3/4 flex flex-row justify-center md:justify-between items-center my-auto '>
         <div className='hidden md:flex ml-20 mb-[-180px]'>
           <img src={left_tree} alt='left tree' className='h-24 lg:h-36 animate-left' />
         </div>
         <div >
-          <div className='w-36 h-36 lg:w-60 lg:h-60 rounded-full bg-[#E51F24] animate-down'></div>
+          <div className=' w-36 h-36 lg:w-60 lg:h-60 rounded-full bg-[#E51F24] animate-down flex justify-center items-center'>
+            <h1 className="text-3xl lg:text-5xl japanese">
+              Sp<span className="text-white">aceupcus</span>at
+            </h1>
+          </div>
         </div>
         <div className='hidden md:flex mt-[-180px]'>
           <img src={right_tree} alt='right tree' className='h-24 lg:h-48 animate-right' />
 
         </div>
       </div>
-      <div className={`fixed bottom-0 left-0 w-full ${scrolled ? 'enlarged' : ''} flex justify-center items-center `}>
+      <div className={`hidden md:flex fixed bottom-0 left-0 w-full ${scrolled ? 'enlarged' : ''} flex justify-center items-center  `}>
+        <div className="w-3/5">
         <img
           src={mountain}
           alt='mountain'
-          className={` ${scrolled ? 'h-44' : 'h-40'} animate-up`}
+          className={` ${scrolled ? 'h-56' : 'h-40'} animate-up flex justify-center mx-auto`}
           style={{
-            transition: 'height 0.5s ease',
+            transition: 'height 1s ease',
           }}
         />
         {/* adjust height and width and scale duration in css later */}
-        <div className={`fixed bottom-0 left-0 w-full flex justify-center items-center`}>
-          <img
-            src={arch}
-            alt="arch"
-            className={`${scrolled ? 'animate-ping' : 'h-64'} animate-up-slow`}
-          />
         </div>
+      </div>
+      <div className={`fixed bottom-0 left-0 w-full flex justify-center items-center`}>
+        <img
+          src={arch}
+          alt="arch"
+          className={`${scrolled ? 'animate-ping' : 'h-72 md:h-96'} animate-up-slow`}
+        />
       </div>
 
 
@@ -65,7 +71,7 @@ const Slide1 = () => {
         <img
           src={shuttle}
           alt="shuttle"
-          className={`${scrolled ? 'h-96' : 'h-64'} animate-shuttle`}
+          className={`${scrolled ? 'h-96 md:h-[560px]' : 'h-64'} animate-shuttle`}
         />
 
       </div>

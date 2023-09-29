@@ -95,28 +95,17 @@
   
   .enlarged {
     transform-origin: top center;
-    transform: scaleY(1) scaleX(1.4); 
+    transform: scaleY(1) scaleX(1.2); 
     transition: transform 0.3s ease;
     position: fixed;
     bottom: 0;
   }
   
-  @keyframes fadeInOut {
-    0% {
-      opacity: 1;
-      height: auto;
-    }
-    99% {
-      opacity: 0;
-      height: auto;
-    }
-    100% {
-      opacity: 0;
-      height: 0;
-    }
-  }
-  
-  .animate-ping {
-    animation: fadeInOut 1s forwards;
-    animation-delay: 0s;
+
+  .animate-up-slow {
+    animation-name: curtain-up;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.0s;
   }
