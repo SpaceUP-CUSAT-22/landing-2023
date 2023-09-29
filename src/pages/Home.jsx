@@ -9,7 +9,7 @@ const Home = () => {
   return (
       <div className='bg-Vector bg-fixed bg-cover bg-no-repeat bg-center'>
         <Slide1 />
-        {/* <Slide2 /> */}
+        <Slide2 />
         <Slide3 />
         <Slide4 />
         <Slide5 />

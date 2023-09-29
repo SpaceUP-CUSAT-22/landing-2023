@@ -25,3 +25,16 @@
 .eventBox:nth-child(7){
     background-image: url('../../assets/rect7.png');
 }
+
+@keyframes slideDown {
+    to {
+        transform: scaleY(1);
+    }
+}
+
+.slideDown{
+    animation: slideDown 0.5s ease-in-out forwards;
+    transform-origin: top;
+    transform: scaleY(0);
+    
+}
