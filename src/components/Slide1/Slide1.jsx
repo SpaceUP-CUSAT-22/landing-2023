@@ -47,9 +47,9 @@ const Slide1 = () => {
           <img src={left_tree} alt='left tree' className='h-24 lg:h-36 animate-left' />
         </div>
         <div >
-          <div className=' w-36 h-36 lg:w-60 lg:h-60 rounded-full bg-[#E51F24] animate-down flex justify-center items-center'>
-            <h1 className="text-3xl lg:text-5xl japanese">
-              Sp<span className="text-white">aceupcus</span>at
+          <div className=' w-48 h-48 lg:w-60 lg:h-60 rounded-full bg-[#E51F24] animate-down flex justify-center items-center'>
+            <h1 className="text-5xl lg:text-[63px] japanese">
+              Spa<span className="text-white">ceupcu</span>sat
             </h1>
           </div>
         </div>
