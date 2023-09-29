@@ -55,3 +55,7 @@
     transform: translate(200%);
     animation: slideUp 0.5s ease-in-out forwards;
 }
+
+.bg-vector{
+    background-image: url('../../assets/Vector2.svg');
+}
