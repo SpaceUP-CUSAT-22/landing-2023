@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        satoshi: ['Satoshi', 'sans'], 
+      },
       keyframes: {
         curtain: {
           '0%': {
@@ -18,6 +21,7 @@ export default {
       },
       backgroundImage: theme => ({
         'Vector': "url('./assets/Vector.svg')",
+        'Vector3': "url('./assets/Vector3.svg')",
       }),
       
     },
