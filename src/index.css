@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
 @font-face {
   font-family: 'Japanese';
   src: url('./assets/fonts/electroharmonix.otf') format('opentype');
@@ -9,6 +11,10 @@
 
 .japanese{
   font-family: 'Japanese', sans-serif;
+}
+
+.quicksand{
+  font-family: 'Quicksand', sans-serif;
 }
 
 html, body {
