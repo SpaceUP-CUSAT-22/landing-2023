@@ -27,14 +27,31 @@
 }
 
 @keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-300%);
+    }
     to {
-        transform: scaleY(1);
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(200%);
+    }
+    to {
+        transform: translateY(0);
     }
 }
 
 .slideDown{
+    transform: translateY(-300%);
     animation: slideDown 0.5s ease-in-out forwards;
-    transform-origin: top;
-    transform: scaleY(0);
-    
+}
+
+.slideUp{
+    transform: translate(200%);
+    animation: slideUp 0.5s ease-in-out forwards;
 }

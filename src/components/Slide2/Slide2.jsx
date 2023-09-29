@@ -2,8 +2,29 @@ import React from 'react'
 import './style.css'
 
 const Slide2 = () => {
+  const componentRef = React.useRef(null);
+  const [animate, setAnimate] = React.useState(false)
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const element = componentRef.current;
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        console.log(rect.top, rect.bottom, window.innerHeight)
+        if (rect.top < window.innerHeight-500 && rect.bottom >= 0) {
+          setAnimate(true)
+        } else {
+          // setAnimate(false)
+        }
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
-    <div id="events" className='mt-20 h-[100%] absolute z-30'>
+    <div ref={componentRef} id="events" className='mt-20 h-[100%] absolute z-30'>
       <div className='grid grid-cols-5'>
         <div className='col-span-1 h-[100%] bg-black px-40 py-10'>
           <h1 class="text-white japanese flex flex-col items-center mt-[20vh]">
@@ -19,7 +40,7 @@ const Slide2 = () => {
         </div>
         <div className='bg-stone-950 w-screen h-[100%]'>
           <div className='flex flex-wrap'>
-            <div className='eventBox slideDown bg-black h-[250px] w-[150px]'></div>
+            <div className={`eventBox ${animate ? 'slideDown' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}></div>
             <div className='bg-black h-[250px] w-[150px] flex items-center border-l-[1px] border-r-[1.5px] border-[#4d4d4d]'>
               <h1 className='text-[#828282] text-6xl -rotate-90 japanese'>2022</h1>
             </div>
@@ -27,7 +48,7 @@ const Slide2 = () => {
             <div className='bg-black h-[250px] w-[150px] flex items-center border-l-[1px] border-r-[1.5px] border-[#4d4d4d]'>
               <h1 className='text-[#828282] text-6xl -rotate-90 japanese'>2022</h1>
             </div>
-            <div className='eventBox slideDown bg-black h-[250px] w-[150px]'></div>
+            <div className={`eventBox ${animate ? 'slideDown' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}></div>
             <div className='bg-black h-[250px] w-[150px] flex items-center border-l-[1px] border-r-[1.5px] border-[#4d4d4d]'>
               <h1 className='text-[#828282] text-6xl -rotate-90 japanese'>2023</h1>
             </div>
@@ -35,13 +56,13 @@ const Slide2 = () => {
           </div>
           <div className='flex flex-wrap'>
             <div className='bg-black h-[250px] w-[150px]'></div>
-            <div className='eventBox bg-black h-[250px] w-[150px]'></div>
+            <div className={`eventBox ${animate ? 'slideUp' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}></div>
             <div className='bg-black h-[250px] w-[150px] flex items-center border-l-[1px] border-r-[1.5px] border-[#4d4d4d]'>
               <h1 className='text-[#828282] text-6xl -rotate-90 japanese'>2022</h1>
             </div>
-            <div className='eventBox bg-black h-[250px] w-[150px]'></div>
+            <div className={`eventBox ${animate ? 'slideUp' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}></div>
             <div className='bg-black h-[250px] w-[150px]'></div>
-            <div className='eventBox bg-black h-[250px] w-[150px]'></div>
+            <div className={`eventBox ${animate ? 'slideUp' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}></div>
             <div className='bg-black h-[250px] w-[150px] flex items-center border-l-[1px] border-r-[1.5px] border-[#4d4d4d]'>
               <h1 className='text-[#828282] text-6xl -rotate-90 japanese'>2023</h1>
             </div>
@@ -51,13 +72,13 @@ const Slide2 = () => {
               <h1 className='text-[#828282] text-6xl -rotate-90 japanese'>2019</h1>
             </div>
             <div className='bg-black h-[250px] w-[150px]'></div>
-            <div className='eventBox slideDown bg-black h-[250px] w-[150px]'></div>
+            <div className={`eventBox ${animate ? 'slideDown' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}></div>
             <div className='bg-black h-[250px] w-[150px]'></div>
             <div className='bg-black h-[250px] w-[150px] flex items-center border-l-[1px] border-r-[1.5px] border-[#4d4d4d]'>
               <h1 className='text-[#828282] text-6xl -rotate-90 japanese'>2023</h1>
             </div>
             <div className='bg-black h-[250px] w-[150px]'></div>
-            <div className='eventBox slideDown bg-black h-[250px] w-[150px]'></div>
+            <div className={`eventBox ${animate ? 'slideDown' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}></div>
           </div>
         </div>
       </div>
