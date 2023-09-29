@@ -13,7 +13,6 @@ const Slide6 = () => {
             const element = componentRef.current;
             if (element) {
                 const rect = element.getBoundingClientRect();
-                console.log(rect.top, rect.bottom, window.innerHeight)
                 if (rect.top < window.innerHeight - 500 && rect.bottom >= 0) {
                     setSlide('#info')
                 } else {

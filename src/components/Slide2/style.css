@@ -46,20 +46,6 @@
     }
 }
 
-.slideDown{
-    transform: translateY(-300%);
-    animation: slideDown 0.5s ease-in-out forwards;
-}
-
-.slideUp{
-    transform: translate(200%);
-    animation: slideUp 0.5s ease-in-out forwards;
-}
-
-.bg-vector{
-    background-image: url('../../assets/Vector2.svg');
-}
-
 @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -69,6 +55,24 @@
     }
   }
 
+.slideDown{
+    transform: translateY(-300%);
+    animation: slideDown 0.5s ease-in-out forwards;
+}
+
+.slideUp{
+    transform: translateY(200%);
+    animation: slideUp 0.5s ease-in-out forwards;
+}
+
+.bg-vector{
+    background-image: url('../../assets/Vector2.svg');
+}
+
 .fade{
     animation: fadeIn 0.5s ease-in-out;
+}
+
+.fadeSlow{
+    animation: fadeIn 1s ease-in-out;
 }
