@@ -28,7 +28,7 @@ const Slide2 = () => {
   return (
     <div ref={componentRef} id="events" className='md:mt-20 h-[100%] relative z-30 max-w-full overflow-hidden'>
       <div className='grid md:grid-cols-5 grid-cols-1'>
-        <div className='col-span-1 h-[100%] bg-black md:px-40 py-10 bg-vector'>
+        <div className={`${animate ? 'fade' : 'hidden'} md:fixed top-0 z-20 col-span-1 h-[100%] bg-black md:px-40 py-10 bg-vector`}>
           <h1 class="text-white japanese flex justify-center md:flex-col items-center md:mt-[20vh]">
             <hr className='border-[1.5px] md:rotate-0 rotate-90 md:w-[100px] w-[50px] my-5' />
             <span class="text-3xl">E</span>
@@ -40,7 +40,7 @@ const Slide2 = () => {
             <hr className='border-[1.5px] md:rotate-0 rotate-90 md:w-[100px] w-[50px] my-5' />
           </h1>
         </div>
-        <div className='bg-stone-950 w-screen h-[100%]'>
+        <div className='md:ml-[420px] bg-stone-950 w-screen h-[100%]'>
           <div className='flex max-w-full overflow-x-auto'>
             <div className={`eventBox flex items-center ${animate ? 'slideDown' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}>
               <h1 className='text-white text-3xl -rotate-90 japanese'>SPACEUP</h1>

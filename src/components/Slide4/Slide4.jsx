@@ -8,10 +8,9 @@ const Slide4 = () => {
       if (element) {
         const rect = element.getBoundingClientRect();
         if (rect.top < window.innerHeight-500 && rect.bottom >= 0) {
-          setAnimate(true)
           setSlide('#plan')
         } else {
-          setAnimate(false)
+          
         }
       }
     };
@@ -26,7 +25,7 @@ const Slide4 = () => {
       <div className='md:px-20 px-5 py-20'>
         <div className='flex md:flex-row flex-col justify-center md:justify-between items-center'>
           <h1 className='quicksand text-3xl md:text-5xl text-white md:tracking-[80px]'>2023</h1>
-          <hr className='md:block hidden border-[1.5px] border-[#1C1C1C] w-[40%]' />
+          <hr className='md:block md:-ml-20 hidden border-[1.5px] border-[#1C1C1C] w-[40%]' />
           <h2 className='md:my-0 my-10 text-xl md:text-4xl text-white quicksand'>October 14th 2023</h2>
         </div>
         <div className='overflow-x-auto my-16'>

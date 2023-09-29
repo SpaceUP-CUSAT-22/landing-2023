@@ -18,6 +18,7 @@ const Slide1 = () => {
       const scrollTop = window.scrollY;
       if (scrollTop > 50) {
         setScrolled(true);
+        window.location.replace('/#info')
       } else {
         setScrolled(false);
       }
