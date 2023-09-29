@@ -1,16 +1,18 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import left_tree from '../../assets/left_tree.png'
 import right_tree from '../../assets/right_tree.png'
 import mountain from '../../assets/landscape.png'
 import arch from '../../assets/arch.png'
 import shuttle from '../../assets/shuttle.png'
 import './style.css'
+import { useStateContext } from "../../context/SateContext";
 
 
 
 const Slide1 = () => {
+  const {setSlide} = useStateContext()
   const [scrolled, setScrolled] = useState(false);
-
+  const componentRef = React.useRef(null);
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -18,6 +20,17 @@ const Slide1 = () => {
         setScrolled(true);
       } else {
         setScrolled(false);
+      }
+
+      const element = componentRef.current;
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        console.log(rect.top, rect.bottom, window.innerHeight)
+        if (rect.top < window.innerHeight-500 && rect.bottom >= 0) {
+          setSlide('#home')
+        } else {
+
+        }
       }
     };
 
@@ -28,7 +41,7 @@ const Slide1 = () => {
 
 
   return (
-    <div id="home" className='h-screen overflow-hidden'>
+    <div ref={componentRef} id="home" className='h-screen overflow-hidden'>
       <div className='fixed top-0 left-0 w-full h-3/4 flex flex-row justify-center md:justify-between items-center my-auto '>
         <div className='hidden md:flex ml-20 mb-[-180px]'>
           <img src={left_tree} alt='left tree' className='h-24 lg:h-36 animate-left' />

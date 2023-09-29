@@ -1,7 +1,9 @@
 import React from 'react'
 import './style.css'
+import { useStateContext } from '../../context/SateContext';
 
 const Slide2 = () => {
+  const {setSlide} = useStateContext()
   const componentRef = React.useRef(null);
   const [animate, setAnimate] = React.useState(false)
   React.useEffect(() => {
@@ -12,6 +14,7 @@ const Slide2 = () => {
         console.log(rect.top, rect.bottom, window.innerHeight)
         if (rect.top < window.innerHeight-500 && rect.bottom >= 0) {
           setAnimate(true)
+          setSlide('#events')
         } else {
           // setAnimate(false)
         }
@@ -40,7 +43,9 @@ const Slide2 = () => {
         </div>
         <div className='bg-stone-950 w-screen h-[100%]'>
           <div className='flex flex-wrap'>
-            <div className={`eventBox ${animate ? 'slideDown' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}></div>
+            <div className={`eventBox flex items-center ${animate ? 'slideDown' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}>
+              <h1 className='text-white text-3xl -rotate-90 japanese'>SPACEUP</h1>
+            </div>
             <div className='bg-black h-[250px] w-[150px] flex items-center border-l-[1px] border-r-[1.5px] border-[#4d4d4d]'>
               <h1 className='text-[#828282] text-6xl -rotate-90 japanese'>2022</h1>
             </div>
@@ -48,7 +53,9 @@ const Slide2 = () => {
             <div className='bg-black h-[250px] w-[150px] flex items-center border-l-[1px] border-r-[1.5px] border-[#4d4d4d]'>
               <h1 className='text-[#828282] text-6xl -rotate-90 japanese'>2022</h1>
             </div>
-            <div className={`eventBox ${animate ? 'slideDown' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}></div>
+            <div className={`eventBox flex items-center ${animate ? 'slideDown' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}>
+              <h1 className='text-white text-3xl -rotate-90 japanese'>CELESTIA</h1>
+            </div>
             <div className='bg-black h-[250px] w-[150px] flex items-center border-l-[1px] border-r-[1.5px] border-[#4d4d4d]'>
               <h1 className='text-[#828282] text-6xl -rotate-90 japanese'>2023</h1>
             </div>
@@ -56,13 +63,19 @@ const Slide2 = () => {
           </div>
           <div className='flex flex-wrap'>
             <div className='bg-black h-[250px] w-[150px]'></div>
-            <div className={`eventBox ${animate ? 'slideUp' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}></div>
+            <div className={`eventBox flex items-center ${animate ? 'slideUp' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}>
+              <h1 className='text-white text-3xl -rotate-90 japanese'>CASSIOPIEA</h1>
+            </div>
             <div className='bg-black h-[250px] w-[150px] flex items-center border-l-[1px] border-r-[1.5px] border-[#4d4d4d]'>
               <h1 className='text-[#828282] text-6xl -rotate-90 japanese'>2022</h1>
             </div>
-            <div className={`eventBox ${animate ? 'slideUp' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}></div>
+            <div className={`eventBox flex items-center ${animate ? 'slideUp' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}>
+              <h1 className='text-white text-3xl -rotate-90 japanese'>SPACEUP</h1>
+            </div>
             <div className='bg-black h-[250px] w-[150px]'></div>
-            <div className={`eventBox ${animate ? 'slideUp' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}></div>
+            <div className={`eventBox flex items-center ${animate ? 'slideUp' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}>
+              <h1 className='text-white text-3xl -rotate-90 japanese'>STUDENT'S SPACE SUMMIT</h1>
+            </div>
             <div className='bg-black h-[250px] w-[150px] flex items-center border-l-[1px] border-r-[1.5px] border-[#4d4d4d]'>
               <h1 className='text-[#828282] text-6xl -rotate-90 japanese'>2023</h1>
             </div>
@@ -72,13 +85,17 @@ const Slide2 = () => {
               <h1 className='text-[#828282] text-6xl -rotate-90 japanese'>2019</h1>
             </div>
             <div className='bg-black h-[250px] w-[150px]'></div>
-            <div className={`eventBox ${animate ? 'slideDown' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}></div>
+            <div className={`eventBox flex items-center ${animate ? 'slideDown' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}>
+              <h1 className='text-white text-3xl -rotate-90 japanese'>STUDENT'S SPACE SUMMIT</h1>
+            </div>
             <div className='bg-black h-[250px] w-[150px]'></div>
             <div className='bg-black h-[250px] w-[150px] flex items-center border-l-[1px] border-r-[1.5px] border-[#4d4d4d]'>
               <h1 className='text-[#828282] text-6xl -rotate-90 japanese'>2023</h1>
             </div>
             <div className='bg-black h-[250px] w-[150px]'></div>
-            <div className={`eventBox ${animate ? 'slideDown' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}></div>
+            <div className={`eventBox flex items-center ${animate ? 'slideDown' : 'scale-y-0'} bg-black h-[250px] w-[150px]`}>
+              <h1 className='text-white text-3xl -rotate-90 japanese'>SPACEUP</h1>
+            </div>
           </div>
         </div>
       </div>
