@@ -7,9 +7,9 @@ import Slide5 from '../components/Slide5/Slide5'
 
 const Home = () => {
   return (
-      <div className='bg-Vector bg-fixed bg-cover bg-no-repeat bg-center'>
+      <div>
         <Slide1 />
-        {/* <Slide2 /> */}
+        <Slide2 />
         <Slide3 />
         <Slide4 />
         <Slide5 />

@@ -15,6 +15,26 @@ html, body {
   scroll-behavior: smooth;
 }
 
+
+@keyframes backgroundChange {
+  0% {
+    background-color: black;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+
+
+body {
+  background-image: url('./assets/Vector.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: backgroundChange 2s forwards;
+}
+
 @keyframes curtain {
   0% {
     transform: translateX(0);
