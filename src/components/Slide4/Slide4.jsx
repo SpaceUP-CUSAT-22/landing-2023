@@ -7,7 +7,6 @@ const Slide4 = () => {
       const element = componentRef.current;
       if (element) {
         const rect = element.getBoundingClientRect();
-        console.log(rect.top, rect.bottom, window.innerHeight)
         if (rect.top < window.innerHeight-500 && rect.bottom >= 0) {
           setAnimate(true)
           setSlide('#plan')
@@ -24,14 +23,14 @@ const Slide4 = () => {
   }, []);
   return (
     <div id="plan" ref={componentRef} className='bg-black h-full w-[100%] relative z-30'>
-      <div className='px-20 py-20'>
-        <div className='flex justify-between items-center'>
-          <h1 className='quicksand text-5xl text-white tracking-[80px]'>2023</h1>
-          <hr className='border-[1.5px] border-[#1C1C1C] w-[40%]' />
-          <h2 className='text-4xl text-white quicksand'>October 14th 2023</h2>
+      <div className='md:px-20 px-5 py-20'>
+        <div className='flex md:flex-row flex-col justify-center md:justify-between items-center'>
+          <h1 className='quicksand text-3xl md:text-5xl text-white md:tracking-[80px]'>2023</h1>
+          <hr className='md:block hidden border-[1.5px] border-[#1C1C1C] w-[40%]' />
+          <h2 className='md:my-0 my-10 text-xl md:text-4xl text-white quicksand'>October 14th 2023</h2>
         </div>
         <div className='overflow-x-auto my-16'>
-          <div className='min-w-[150%]'>
+          <div className='min-w-[2000px]'>
 
             <div className='inline-flex items-center'>
               <h3 className='text-2xl font-light text-white mr-20'>8</h3>
