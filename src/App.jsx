@@ -7,7 +7,12 @@ import { useStateContext } from "./context/SateContext"
 function App() {
   const {slide, setBlack, black} = useStateContext()
   React.useEffect(() => {
-    if(slide == '#events' || slide == '#info' || slide == '#plan') setBlack(true)
+    if(slide == '#events' || slide == '#info' || slide == '#plan'){
+      setBlack(true)
+    }else{
+      setBlack(false)
+    }
+
   }, [slide])
   return (
     <>
