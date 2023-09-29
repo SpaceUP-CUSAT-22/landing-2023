@@ -16,7 +16,7 @@ const Slide2 = () => {
           setAnimate(true)
           setSlide('#events')
         } else {
-          // setAnimate(false)
+          setAnimate(false)
         }
       }
     };
