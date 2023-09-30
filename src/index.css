@@ -18,6 +18,10 @@
   scroll-snap-align: start;
 }
 
+.component2{
+  scroll-snap-align: inherit;
+}
+
 .japanese{
   font-family: 'Japanese', sans-serif;
 }

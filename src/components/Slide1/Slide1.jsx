@@ -40,8 +40,8 @@ const Slide1 = () => {
 
 
   return (
-    <div ref={componentRef} id="home" className='component h-screen overflow-hidden'>
-      <div className='fixed top-0 left-0 w-full h-3/4 flex flex-row justify-center md:justify-between items-center my-auto '>
+    <div ref={componentRef} id="home" className={`component h-screen overflow-hidden`}>
+      <div className={`fixed top-0 left-0 w-full h-3/4 flex flex-row justify-center md:justify-between items-center my-auto `}>
         <div className='hidden md:flex ml-20 mb-[-180px]'>
           <img src={left_tree} alt='left tree' className='h-24 lg:h-36 animate-left' />
         </div>

@@ -8,7 +8,7 @@ import Slide6 from '../components/Slide6/Slide6'
 
 const Home = () => {
   return (
-      <div id="container">
+      <div>
         <Slide1 />
         <Slide2 />
         <Slide3 />
