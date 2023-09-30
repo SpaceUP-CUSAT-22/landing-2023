@@ -2,14 +2,14 @@ const Slide4 = () => {
   return (
     <div className="bg-[#fff] h-[1080px] w-auto">
       <h1 className="text-5xl text-center pt-20">Students Space Summit 2023</h1>
-      <div className="flex">
+      <div className="flex justify-center">
         <div className="grid grid-cols-1">
           <img src="./images/image-2.png" alt="" className="m" />
           <img src="./images/demo-speaker.png" alt="" />
         </div>
-        <div className="grid ml-11 grid-cols-1">
+        <div className="grid ml-11 mb-6 grid-cols-1">
           <img src="./images/wide-image.png" alt="" />
-          <div className="ml-20 grid grid-cols-2">
+          <div className="ml-20 mt-6  grid grid-cols-2 ">
             <img src="./images/standard-image.png" alt="" />
             <img src="./images/standard-image.png" alt="" />
             <img src="./images/standard-image2.png" alt="" />
