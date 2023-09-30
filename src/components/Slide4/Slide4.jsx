@@ -1,6 +1,8 @@
 import React from 'react'
+import { useStateContext } from '../../context/SateContext';
 
 const Slide4 = () => {
+  const {setSlide} = useStateContext()
   const componentRef = React.useRef(null);
   React.useEffect(() => {
     const handleScroll = () => {

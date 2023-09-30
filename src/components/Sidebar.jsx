@@ -42,10 +42,10 @@ const Sidebar = () => {
 
         {/* Mobile Navigation  */}
         <div onClick={() => setToggle(toggle => !toggle)} className='md:hidden w-screen absolute z-20 px-5 py-5'>
-            {toggle ? <CloseOutlinedIcon fontSize="large" className={`${slide == '#events' ? 'text-white' : 'text-black'}`} /> : <MenuOutlinedIcon fontSize="large" className={`${slide == '#events' ? 'text-white' : 'text-black'}`} />}
+            {toggle ? <CloseOutlinedIcon fontSize="large" className={`${black ? 'text-white' : 'text-black'}`} /> : <MenuOutlinedIcon fontSize="large" className={`${black && slide != '#info' ? 'text-white' : 'text-black'}`} />}
         </div>
         {toggle && 
-        <div onClick={() => setToggle(false)} className={`${slide == '#events' ? 'bg-[#080605]' : 'bg-white'} absolute w-screen h-screen px-10 flex flex-col justify-center items-center`}>
+        <div onClick={() => setToggle(false)} className={`${black ? 'bg-[#080605]' : 'bg-white'} absolute w-screen h-screen px-10 flex flex-col justify-center items-center`}>
             <div className='mt-[15vh]'>
                 <a href="#home" onClick={() => setSlide('#home')} className='flex items-center h-20'>
                     <HomeOutlinedIcon className={`${(slide != '#events' && slide != '#speakers' && slide != '#plan' && slide != '#images' && slide != '#info') ? 'text-red-600' : black ? 'text-white' : 'text-black'} !text-[30px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
