@@ -115,4 +115,4 @@ const Slide4 = () => {
   )
 }
 
-export default Slide4
+export default Slide4;
