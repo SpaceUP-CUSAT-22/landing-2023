@@ -27,7 +27,12 @@
 
 html, body {
   scroll-behavior: smooth;
-  /* scroll-snap-type: y mandatory; */
+}
+
+@media screen and (min-width: 1024px) {
+  html, body {
+    scroll-snap-type: y mandatory;
+  }
 }
 
 
