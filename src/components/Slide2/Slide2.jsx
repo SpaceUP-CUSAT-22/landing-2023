@@ -26,7 +26,7 @@ const Slide2 = () => {
     };
   }, []);
   return (
-    <div ref={componentRef} id="events" className='md:mt-20 h-[100%] relative z-30 max-w-full overflow-hidden'>
+    <div ref={componentRef} id="events" className='component md:mt-20 h-[100%] relative z-30 max-w-full overflow-hidden'>
       <div className='grid md:grid-cols-5 grid-cols-1'>
         <div className={`${animate ? 'fade' : 'hidden'} md:fixed top-0 z-20 col-span-1 h-[100%] bg-black md:px-40 py-10 bg-vector`}>
           <h1 class="text-white japanese flex justify-center md:flex-col items-center md:mt-[20vh]">

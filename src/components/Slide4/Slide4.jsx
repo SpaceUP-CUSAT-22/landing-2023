@@ -23,7 +23,7 @@ const Slide4 = () => {
     };
   }, []);
   return (
-    <div id="plan" ref={componentRef} className='bg-black h-full w-[100%] relative z-30'>
+    <div id="plan" ref={componentRef} className='component bg-black h-full w-[100%] relative z-30'>
       <div className='md:px-20 px-5 py-20'>
         <div className='flex md:flex-row flex-col justify-center md:justify-between items-center'>
           <h1 className='quicksand text-3xl md:text-5xl text-white md:tracking-[80px]'>2023</h1>

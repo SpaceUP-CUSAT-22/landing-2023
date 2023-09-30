@@ -2,7 +2,8 @@ import React from 'react'
 
 const Slide3 = () => {
   return (
-    <div className='bg-white w-full h-full relative z-30'>Slide3</div>
+    // component class is compulsory 
+    <div className='component bg-white w-full h-full relative z-30'>Slide3</div>
   )
 }
 

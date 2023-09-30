@@ -26,7 +26,7 @@ const Slide6 = () => {
 
 
     return (
-        <div ref={componentRef} id="info" className='relative z-30 bg-white max-w-full overflow-hidden'>
+        <div ref={componentRef} id="info" className='component relative z-30 bg-white max-w-full overflow-hidden'>
             <div className="flex flex-col lg:flex-row gap-x-24 gap-y-6 my-24 mx-8 md:mx-12 lg:mx-20 border-b-2 pb-6">
                 <div className='col-span-1 '>
                     <h1 class="text-black japanese flex lg:flex-col gap-x-1 ">

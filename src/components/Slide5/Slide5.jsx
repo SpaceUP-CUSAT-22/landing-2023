@@ -2,7 +2,8 @@ import React from 'react'
 
 const Slide5 = () => {
   return (
-    <div>Slide5</div>
+    // component class is compulsory 
+    <div className='component'>Slide5</div>
   )
 }
 
