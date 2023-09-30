@@ -10,8 +10,7 @@ import { useStateContext } from "../../context/SateContext";
 
 
 const Slide1 = () => {
-  const {setSlide} = useStateContext()
-  const [scrolled, setScrolled] = useState(false);
+  const {setSlide, scrolled, setScrolled} = useStateContext()
   const componentRef = React.useRef(null);
   useEffect(() => {
     const handleScroll = () => {

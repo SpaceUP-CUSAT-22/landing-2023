@@ -14,7 +14,7 @@
 }
 
 .component2{
-  scroll-snap-align: inherit;
+  /* scroll-snap-align: end; */
 }
 
 .japanese{
