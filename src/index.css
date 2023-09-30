@@ -9,11 +9,6 @@
   src: url('./assets/fonts/electroharmonix.otf') format('opentype');
 }
 
-/* html {
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-} */
-
 .component {
   scroll-snap-align: start;
 }
@@ -32,8 +27,7 @@
 
 html, body {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  /* scroll-snap-type: y mandatory; */
 }
 
 
