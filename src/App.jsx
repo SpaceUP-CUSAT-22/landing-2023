@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import Sidebar from "./components/Sidebar"
 import { useStateContext } from "./context/SateContext"
 import Booked from "./pages/Booked"
+import Register from "./pages/Register"
 
 function App() {
   const {slide, setBlack, black} = useStateContext()
@@ -28,6 +29,7 @@ function App() {
             <Routes>
               <Route element={<Home />} path="/" />
               <Route element={<Booked />} path="/booked" />
+              <Route element={<Register />} path="/register" />
             </Routes>
           </BrowserRouter>
         </div>

@@ -83,7 +83,7 @@ const Slide3 = () => {
                 <div className='md:col-span-1 flex md:flex-col items-center'>
                     <p onClick={handleDec} className='transform md:-rotate-90 rotate-180 text-4xl md:text-5xl mt-2 md:mt-0 md:-ml-3 hover:cursor-pointer'>&gt;</p>
                     <hr className='md:h-[200px] md:w-[2px] md:min-w-[2px] h-[2px] w-[35%] min-w-[35%] bg-black'/>
-                    <h1 className=' text-black text-3xl md:text-5xl my-5'>{speaker}/5</h1>
+                    <h1 className=' text-black text-3xl md:text-5xl my-5'>{speaker}/3</h1>
                     <hr className='md:h-[200px] md:w-[2px] md:min-w-[2px] h-[2px] w-[35%] min-w-[35%] bg-black'/>
                     <p onClick={handleInc} className='transform md:rotate-90 rotate-0 text-4xl md:text-5xl mb-1 md:mb-0 md:ml-3 hover:cursor-pointer'>&gt;</p>
                 </div>

@@ -1,30 +1,30 @@
-.eventBox:nth-child(1){
+.eventBox1{
     background-image: url('../../assets/rect1.png');
 }
 
-.eventBox:nth-child(2){
+.eventBox2{
     background-image: url('../../assets/rect2.png');
 }
 
-.eventBox:nth-child(3){
+.eventBox3{
     background-image: url('../../assets/rect3.png');
 }
 
-.eventBox:nth-child(4){
+.eventBox4{
     background-image: url('../../assets/rect4.png');
 }
 
-.eventBox:nth-child(5){
+.eventBox5{
     background-image: url('../../assets/rect5.png');
 }
 
-.eventBox:nth-child(6){
+.eventBox6{
     background-image: url('../../assets/rect6.png');
 }
 
-.eventBox:nth-child(7){
+/* .eventBox:nth-child(7){
     background-image: url('../../assets/rect7.png');
-}
+} */
 
 @keyframes slideDown {
     from {

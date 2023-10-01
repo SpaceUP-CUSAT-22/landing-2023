@@ -81,7 +81,7 @@ const Slide1 = () => {
       </div>
 
 
-      <div className={`absolute bottom-[-110px] left-0 w-full ${scrolled ? '' : 'hidden'} hidden md:flex justify-center items-center`}>
+      <div className={`absolute bottom-[-110px] left-0 w-full ${scrolled ? '' : 'hidden'} hidden md:hidden justify-center items-center`}>
         <img
           src={shuttle}
           alt="shuttle"
