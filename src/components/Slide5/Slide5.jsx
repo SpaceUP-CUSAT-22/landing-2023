@@ -31,12 +31,12 @@ const Slide5 = () => {
       <h1 className="md:text-5xl text-4xl absolute z-10 md:left-20 left-10 top-16  text-[#DEDEDE] font-bold rubik md:w-[200px] text-left">Students Space Summit 2023</h1>
       <div className="md:absolute z-20 md:left-40 md:px-0 px-5 top-52 md:flex justify-center">
         <div className="grid grid-cols-1 md:ml-0 ml-10">
-          <img src="./images/image-2.png" alt="" className={`${animate && 'fade'} md:my-0 my-10`} />
-          <img src="./images/demo-speaker.png" alt="" className={`${animate && 'fadeSlow'}`} />
+          <img src="./images/image-2.png" alt="" className={`${animate ? 'fade' : 'hidden'} md:my-0 my-10`} />
+          <img src="./images/demo-speaker.png" alt="" className={`${animate ? 'fadeSlow' : 'hidden'}`} />
         </div>
         <div className="grid md:ml-11 md:my-0 mt-10 grid-cols-1">
-          <img src="./images/wide-image.png" alt="" className={`${animate && 'slideDown'}`} />
-          <div className={`${animate && 'slideUp'} md:ml-20 mt-6 grid grid-cols-2`}>
+          <img src="./images/wide-image.png" alt="" className={`${animate ? 'slideDown' : 'hidden'}`} />
+          <div className={`${animate ? 'slideUp' : 'hidden'} md:ml-20 mt-6 grid grid-cols-2`}>
             <img src="./images/standard-image.png" alt="" />
             <img src="./images/standard-image.png" alt="" />
             <img src="./images/standard-image2.png" alt="" />
