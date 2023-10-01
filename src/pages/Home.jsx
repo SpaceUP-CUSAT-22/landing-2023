@@ -16,8 +16,8 @@ const Home = () => {
         <Slide4 />
         <Slide5 />
         <Slide6 />
-        {/* <div className='component2'></div> */}
         <Slide7 />
+        <div className='component'></div>
     </div>
   )
 }

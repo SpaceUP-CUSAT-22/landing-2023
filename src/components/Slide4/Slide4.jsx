@@ -33,7 +33,7 @@ const Slide4 = () => {
         <div className='overflow-x-auto my-16'>
           <div className='min-w-[2300px]'>
 
-            <div className='inline-flex ml-20 items-center'>
+            <div className='inline-flex ml-[160px] items-center'>
               <h3 className='text-2xl font-light text-white mr-20'>8</h3>
               <hr className='rotate-90 border-white border-[1.5px] w-[20px] mr-20' />
               <h3 className='text-2xl font-light text-white mr-20'>9</h3>
@@ -59,60 +59,75 @@ const Slide4 = () => {
               <h3 className='text-2xl font-light text-white mr-20'>7</h3>
             </div>
             <hr className='border-[#1C1C1C] border-[1px] w-full mt-20' />
-              <div className='flex ml-[90px]'>
-                <div className='bg-[#D9DC47] py-4 px-5 flex justify-center h-[80px] w-[180px]'>
-                  <p className='text-black'>Spot Registration Begins</p>
+              <div className='flex'>
+                <div className='bg-red-500 py-5 px-5 flex justify-center h-[80px] w-[90px]'>
+                  <p className='text-black'>Venue1</p>
                 </div>
-                <div className='bg-[#F3F3D1] py-5 px-5 flex justify-center h-[80px] w-[200px]'>
-                  <p className='text-black'>Innaugral Ceremony</p>
-                </div>
-                <div className='bg-[#FBAD19] py-5 px-5 flex justify-center h-[80px] w-[190px]'>
-                  <p className='text-black'>Tessy Thomas Talk Session</p>
-                </div>
-                <div className='bg-[#FBAD19] py-5 px-5 flex justify-center h-[80px] w-[200px]'>
-                  <p className='text-black'>Brinda Talk Session</p>
-                </div>
-                <div className='ml-[400px] bg-blue-900 py-5 px-5 flex justify-center h-[80px] w-[90px]'>
-                  <p className='text-black'>Break</p>
-                </div>
-                <div className='bg-zinc-500 py-5 px-5 flex justify-center h-[80px] w-[390px]'>
-                  <p className='text-black'>Prep</p>
-                </div>
-                <div className='bg-green-500 py-5 px-5 flex justify-center h-[80px] w-[390px]'>
-                  <p className='text-black'>AstroHack / Treasure Hunt</p>
-                </div>
-              </div>
-            <hr className='border-[#1C1C1C] border-[1px] w-full' />
-              <div className='flex ml-[660px]'>
-                <div className='bg-[#FBAD19] py-7 flex justify-center h-[80px] w-[200px]'>
-                  <p className='text-black'>Games Setting up</p>
-                </div>
-                <div className='ml-[210px] bg-cyan-500 py-7 px-5 flex justify-center h-[80px] w-[190px]'>
-                  <p className='text-black'>Team HORIZON</p>
-                </div>
-                <div className='bg-blue-900 py-7 px-5 flex justify-center h-[80px] w-[90px]'>
-                  <p className='text-black'>Break</p>
-                </div>
-                <div className='bg-zinc-900 py-7 px-5 flex justify-center h-[80px] w-[390px]'>
-                  <p className='text-black'>CANSAT Workshop (Aero in)</p>
-                </div>
-                <div className='bg-green-500 py-7 px-5 flex justify-center h-[80px] w-[390px]'>
-                  <p className='text-black'>Games (Popsicle birdge challenge)</p>
+                <div className='flex ml-[80px]'>
+                  <div className='bg-[#D9DC47] py-4 px-5 flex justify-center h-[80px] w-[180px]'>
+                    <p className='text-black'>Spot Registration Begins</p>
+                  </div>
+                  <div className='bg-[#F3F3D1] py-5 px-5 flex justify-center h-[80px] w-[200px]'>
+                    <p className='text-black'>Innaugral Ceremony</p>
+                  </div>
+                  <div className='bg-[#FBAD19] py-5 px-5 flex justify-center h-[80px] w-[190px]'>
+                    <p className='text-black'>Tessy Thomas Talk Session</p>
+                  </div>
+                  <div className='bg-orange-500 py-5 px-5 flex justify-center h-[80px] w-[200px]'>
+                    <p className='text-black'>Brinda Talk Session</p>
+                  </div>
+                  <div className='ml-[400px] bg-blue-900 py-5 px-5 flex justify-center h-[80px] w-[90px]'>
+                    <p className='text-black'>Break</p>
+                  </div>
+                  <div className='bg-zinc-500 py-5 px-5 flex justify-center h-[80px] w-[390px]'>
+                    <p className='text-black'>Prep</p>
+                  </div>
+                  <div className='bg-green-500 py-5 px-5 flex justify-center h-[80px] w-[390px]'>
+                    <p className='text-black'>AstroHack / Treasure Hunt</p>
+                  </div>
                 </div>
               </div>
             <hr className='border-[#1C1C1C] border-[1px] w-full' />
-              <div className='flex ml-[860px]'>
-                <div className='bg-[#FBAD19] py-7 flex justify-center h-[80px] w-[210px]'>
-                  <p className='text-black'>Lunch break</p>
+              <div className='flex'>
+                <div className='bg-green-500 py-5 px-5 flex justify-center h-[80px] w-[90px]'>
+                  <p className='text-black'>Venue2</p>
                 </div>
-                <div className='bg-[#13B3E5] py-7 px-5 flex justify-center h-[80px] w-[190px]'>
-                  <p className='text-black'>Vyshakhan Thambi</p>
+                <div className='flex ml-[650px]'>
+                  <div className='bg-zinc-500 py-7 flex justify-center h-[80px] w-[200px]'>
+                    <p className='text-black'>Games Setting up</p>
+                  </div>
+                  <div className='ml-[210px] bg-cyan-500 py-7 px-5 flex justify-center h-[80px] w-[190px]'>
+                    <p className='text-black'>Team HORIZON</p>
+                  </div>
+                  <div className='bg-blue-900 py-7 px-5 flex justify-center h-[80px] w-[90px]'>
+                    <p className='text-black'>Break</p>
+                  </div>
+                  <div className='bg-zinc-900 py-7 px-5 flex justify-center h-[80px] w-[390px]'>
+                    <p className='text-white'>CANSAT Workshop (Aero in)</p>
+                  </div>
+                  <div className='bg-green-500 py-7 px-5 flex justify-center h-[80px] w-[390px]'>
+                    <p className='text-black'>Games (Popsicle birdge challenge)</p>
+                  </div>
                 </div>
-                <div className='bg-blue-900 py-7 px-5 flex justify-center h-[80px] w-[90px]'>
-                  <p className='text-black'>Break</p>
+              </div>
+            <hr className='border-[#1C1C1C] border-[1px] w-full' />
+              <div className='flex'>
+                <div className='bg-blue-500 py-5 px-5 flex justify-center h-[80px] w-[90px]'>
+                  <p className='text-black'>Venue3</p>
                 </div>
-                <div className='bg-[#13B3E5] py-7 px-5 flex justify-center h-[80px] w-[390px]'>
-                  <p className='text-black'>WESAT</p>
+                <div className='flex ml-[850px]'>
+                  <div className='bg-blue-900 py-7 flex justify-center h-[80px] w-[210px]'>
+                    <p className='text-black'>Lunch break</p>
+                  </div>
+                  <div className='bg-orange-500 py-7 px-5 flex justify-center h-[80px] w-[190px]'>
+                    <p className='text-black'>Vyshakhan Thambi</p>
+                  </div>
+                  <div className='bg-blue-900 py-7 px-5 flex justify-center h-[80px] w-[90px]'>
+                    <p className='text-black'>Break</p>
+                  </div>
+                  <div className='bg-[#13B3E5] py-7 px-5 flex justify-center h-[80px] w-[390px]'>
+                    <p className='text-black'>WESAT</p>
+                  </div>
                 </div>
               </div>
             {/* <hr className='border-[#1C1C1C] border-[1px] w-full' />

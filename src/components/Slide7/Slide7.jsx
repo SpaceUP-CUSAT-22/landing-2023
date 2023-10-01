@@ -113,6 +113,7 @@ const Slide7 = () => {
     const handleSubmit = async() => {
         try {
             console.log(formData)
+            localStorage.setItem('name', formData.name)
             const docRef = await addDoc(collection(db, "registeredUsers"), {
               formData: formData,
             });
@@ -123,7 +124,7 @@ const Slide7 = () => {
           }
     }
   return (
-    <div ref={componentRef} id="form" className='component2 md:ml-12 relative z-30 h-screen w-[95%]'>
+    <div ref={componentRef} id="form" className='component md:ml-12 relative z-30 h-screen w-[95%]'>
         <div className='flex md:flex-row flex-col'>
             <div className='bg-white px-5 py-10 md:w-[30%]'>
                 <h2 className='text-center font-semibold md:text-4xl text-3xl'>Register</h2>
@@ -157,7 +158,7 @@ const Slide7 = () => {
 
                     <label htmlFor="" className='text-black text-left mr-3'>Referral Code</label>
                     <input name="referralCode" onChange={handleInputChange} type="text" placeholder="Enter Referral Code" className='mb-5 px-5 py-3 rounded-[5px] border-[1.5px] border-zinc-500 ' />
-
+                    <p className='text-black text-lg my-5'>*Refreshments and lunch included</p>
                     <button onClick={handleNext} className='px-10 py-3 text-white bg-[#E51F24] text-center'>NEXT</button>
                     {error && <p className='text-red-500 text-xl my-5 font-bold text-center'>{error}</p>}
 

@@ -8,6 +8,7 @@ import VolumeUpOutlinedIcon from '@mui/icons-material/VolumeUpOutlined';
 import AutoAwesomeOutlinedIcon from '@mui/icons-material/AutoAwesomeOutlined';
 import PanoramaOutlinedIcon from '@mui/icons-material/PanoramaOutlined';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
     const {slide, setSlide, black} = useStateContext()
