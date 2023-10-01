@@ -2,12 +2,14 @@ import React, { useState, useEffect } from "react";
 import logo from '../../assets/spaceup_logo.svg'
 import rocket from '../../assets/Rocket.png'
 import { useStateContext } from "../../context/SateContext";
+import './style.css'
 
 
 
 const Slide6 = () => {
     const { setSlide } = useStateContext()
     const componentRef = React.useRef(null);
+    const [animate, setAnimate] = React.useState(false)
     useEffect(() => {
         const handleScroll = () => {
             const element = componentRef.current;
@@ -15,8 +17,9 @@ const Slide6 = () => {
                 const rect = element.getBoundingClientRect();
                 if (rect.top < window.innerHeight - 500 && rect.bottom >= 0) {
                     setSlide('#info')
+                    setAnimate(true)
                 } else {
-
+                    setAnimate(false)
                 }
             }
         };
@@ -50,7 +53,7 @@ const Slide6 = () => {
                     <img
                         src={rocket}
                         alt="Rocket"
-                        className=" transform -translate-y-1/3  h-36 sm:h-48 lg:h-80"
+                        className={`transform ${animate && 'rocketUp'}  h-36 sm:h-48 lg:h-80`}
                     />
                 </div>
             </div>

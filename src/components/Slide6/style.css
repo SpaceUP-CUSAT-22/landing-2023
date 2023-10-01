@@ -1,0 +1,12 @@
+@keyframes rocketUp {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100px); /* Adjust the distance as needed */
+    }
+  }
+
+.rocketUp{
+    animation: rocketUp 2s forwards;
+}
