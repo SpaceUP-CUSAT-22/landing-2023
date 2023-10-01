@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import Sidebar from "./components/Sidebar"
 import { useStateContext } from "./context/SateContext"
+import Booked from "./pages/Booked"
 
 function App() {
   const {slide, setBlack, black} = useStateContext()
@@ -26,6 +27,7 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route element={<Home />} path="/" />
+              <Route element={<Booked />} path="/booked" />
             </Routes>
           </BrowserRouter>
         </div>

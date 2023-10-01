@@ -19,7 +19,7 @@ const Sidebar = () => {
   return (
     <>
         {/* Laptop Navigation */}
-        <div className='px-5 mt-[20vh] md:flex flex-col hidden'>
+        <div className='px-5 mt-[10vh] md:flex flex-col hidden'>
             <a href="#home" onClick={() => setSlide('#home')} className='flex items-center h-20'>
                 <HomeOutlinedIcon className={`${(slide != '#events' && slide != '#speakers' && slide != '#plan' && slide != '#images' && slide != '#info') ? 'text-red-600' : black ? 'text-white' : 'text-black'} md:!text-[40px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
             </a>
@@ -38,6 +38,9 @@ const Sidebar = () => {
             <a href="#info" onClick={() => setSlide('#info')} className='flex items-center h-20'>
                 <InfoOutlinedIcon className={`${slide == '#info' ? 'text-red-600' : black ? 'text-white' : 'text-black'} md:!text-[30px] text-[20px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
             </a>
+            <a href="#form" onClick={() => setSlide('#form')} className='flex items-center h-20'>
+                <button className='bg-[#E51F24] text-white px-5 py-3 -ml-10 mt-20 -rotate-90'>BUY TICKETS</button>
+            </a>
         </div>
 
         {/* Mobile Navigation  */}
@@ -46,7 +49,7 @@ const Sidebar = () => {
         </div>
         {toggle && 
         <div onClick={() => setToggle(false)} className={`${black ? 'bg-[#080605]' : 'bg-white'} absolute w-screen h-screen px-10 flex flex-col justify-center items-center`}>
-            <div className='mt-[15vh]'>
+            <div className='mt-[0vh]'>
                 <a href="#home" onClick={() => setSlide('#home')} className='flex items-center h-20'>
                     <HomeOutlinedIcon className={`${(slide != '#events' && slide != '#speakers' && slide != '#plan' && slide != '#images' && slide != '#info') ? 'text-red-600' : black ? 'text-white' : 'text-black'} !text-[30px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
                 </a>
@@ -64,6 +67,9 @@ const Sidebar = () => {
                 </a>
                 <a href="#info" onClick={() => setSlide('#info')} className='flex items-center h-20'>
                     <InfoOutlinedIcon className={`${slide == '#info' ? 'text-red-600' : black ? 'text-white' : 'text-black'} !text-[30px] hover:text-red-600 focus:text-red-600 hover:cursor-pointer`} />
+                </a>
+                <a href="#form" onClick={() => setSlide('#form')} className='flex items-center h-20'>
+                    <button className='bg-[#E51F24] text-white px-5 py-3 -ml-10 mt-20 -rotate-90'>BUY TICKETS</button>
                 </a>
             </div>
         </div>
