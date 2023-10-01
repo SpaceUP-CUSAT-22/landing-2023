@@ -24,7 +24,7 @@ const Slide5 = () => {
   }, []);
   return (
     // component class is compulsory 
-    <div id="images" ref={componentRef} className="component bg-white relative z-30 h-screen w-screen">
+    <div id="images" ref={componentRef} className="component bg-white relative z-30 h-screen w-full">
       <h1 className="md:text-5xl text-4xl absolute z-10 md:left-20 left-10 top-16  text-[#DEDEDE] font-bold rubik md:w-[200px] text-left">Students Space Summit 2023</h1>
       <div className="absolute z-20 md:left-40 md:px-0 px-5 top-52 flex justify-center">
         <div className="grid grid-cols-1">
