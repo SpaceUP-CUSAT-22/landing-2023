@@ -15,6 +15,7 @@ const Home = () => {
         <Slide4 />
         <Slide5 />
         <Slide6 />
+        <div className='component2'></div>
     </div>
   )
 }

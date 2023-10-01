@@ -31,7 +31,7 @@ const Slide4 = () => {
           <h2 className='md:my-0 my-10 text-xl md:text-4xl text-white quicksand'>October 14th 2023</h2>
         </div>
         <div className='overflow-x-auto my-16'>
-          <div className='min-w-[2500px]'>
+          <div className='min-w-[2300px]'>
 
             <div className='inline-flex ml-20 items-center'>
               <h3 className='text-2xl font-light text-white mr-20'>8</h3>
@@ -55,51 +55,53 @@ const Slide4 = () => {
               <h3 className='text-2xl font-light text-white mr-20'>5</h3>
               <hr className='rotate-90 border-white border-[1.5px] w-[20px] mr-20' />
               <h3 className='text-2xl font-light text-white mr-20'>6</h3>
+              <hr className='rotate-90 border-white border-[1.5px] w-[20px] mr-20' />
+              <h3 className='text-2xl font-light text-white mr-20'>7</h3>
             </div>
             <hr className='border-[#1C1C1C] border-[1px] w-full mt-20' />
-              <div className='flex'>
+              <div className='flex ml-[90px]'>
                 <div className='bg-[#D9DC47] py-4 px-5 flex justify-center h-[80px] w-[180px]'>
                   <p className='text-black'>Spot Registration Begins</p>
                 </div>
-                <div className='bg-blue-500 py-5 px-5 flex justify-center h-[80px] w-[200px]'>
+                <div className='bg-[#F3F3D1] py-5 px-5 flex justify-center h-[80px] w-[200px]'>
                   <p className='text-black'>Innaugral Ceremony</p>
                 </div>
-                <div className='bg-red-500 py-5 px-5 flex justify-center h-[80px] w-[190px]'>
+                <div className='bg-[#FBAD19] py-5 px-5 flex justify-center h-[80px] w-[190px]'>
                   <p className='text-black'>Tessy Thomas Talk Session</p>
                 </div>
-                <div className='bg-green-800 py-5 px-5 flex justify-center h-[80px] w-[200px]'>
+                <div className='bg-[#FBAD19] py-5 px-5 flex justify-center h-[80px] w-[200px]'>
                   <p className='text-black'>Brinda Talk Session</p>
                 </div>
-                <div className='ml-[400px] bg-green-500 py-5 px-5 flex justify-center h-[80px] w-[90px]'>
+                <div className='ml-[400px] bg-blue-900 py-5 px-5 flex justify-center h-[80px] w-[90px]'>
                   <p className='text-black'>Break</p>
                 </div>
                 <div className='bg-zinc-500 py-5 px-5 flex justify-center h-[80px] w-[390px]'>
                   <p className='text-black'>Prep</p>
                 </div>
-                <div className='bg-[#F3F3D1] py-5 px-5 flex justify-center h-[80px] w-[390px]'>
+                <div className='bg-green-500 py-5 px-5 flex justify-center h-[80px] w-[390px]'>
                   <p className='text-black'>AstroHack / Treasure Hunt</p>
                 </div>
               </div>
             <hr className='border-[#1C1C1C] border-[1px] w-full' />
-              <div className='flex ml-[570px]'>
+              <div className='flex ml-[660px]'>
                 <div className='bg-[#FBAD19] py-7 flex justify-center h-[80px] w-[200px]'>
                   <p className='text-black'>Games Setting up</p>
                 </div>
-                <div className='ml-[210px] bg-yellow-500 py-7 px-5 flex justify-center h-[80px] w-[190px]'>
+                <div className='ml-[210px] bg-cyan-500 py-7 px-5 flex justify-center h-[80px] w-[190px]'>
                   <p className='text-black'>Team HORIZON</p>
                 </div>
-                <div className='bg-blue-800 py-7 px-5 flex justify-center h-[80px] w-[90px]'>
+                <div className='bg-blue-900 py-7 px-5 flex justify-center h-[80px] w-[90px]'>
                   <p className='text-black'>Break</p>
                 </div>
-                <div className='bg-red-900 py-7 px-5 flex justify-center h-[80px] w-[390px]'>
+                <div className='bg-zinc-900 py-7 px-5 flex justify-center h-[80px] w-[390px]'>
                   <p className='text-black'>CANSAT Workshop (Aero in)</p>
                 </div>
-                <div className='bg-[#A6A6A6] py-7 px-5 flex justify-center h-[80px] w-[390px]'>
+                <div className='bg-green-500 py-7 px-5 flex justify-center h-[80px] w-[390px]'>
                   <p className='text-black'>Games (Popsicle birdge challenge)</p>
                 </div>
               </div>
             <hr className='border-[#1C1C1C] border-[1px] w-full' />
-              <div className='flex ml-[770px]'>
+              <div className='flex ml-[860px]'>
                 <div className='bg-[#FBAD19] py-7 flex justify-center h-[80px] w-[210px]'>
                   <p className='text-black'>Lunch break</p>
                 </div>
