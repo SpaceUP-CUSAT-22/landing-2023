@@ -79,12 +79,12 @@ const Slide3 = () => {
     return (
         <div ref={componentRef} id="speakers" className='component bg-white md:h-full h-[100%] w-full relative z-30 py-10 px-5'>
             {/* <hr className='absolute border-[1.5px] md:rotate-0 rotate-90 md:h-[700px] h-[200px] md:ml-[1px] ml-[10px] ' /> */}
-            <div className='grid md:grid-cols-6 grid-cols-5'>  
+            <div className='grid md:grid-cols-6 grid-cols-1'>  
                 <div className='md:col-span-1 flex md:flex-col items-center'>
                     <p onClick={handleDec} className='transform md:-rotate-90 rotate-180 text-4xl md:text-5xl mt-2 md:mt-0 md:-ml-3 hover:cursor-pointer'>&gt;</p>
-                    <hr className='md:h-[200px] md:w-[2px] md:min-w-[2px] min-w-[100%] bg-black'/>
+                    <hr className='md:h-[200px] md:w-[2px] md:min-w-[2px] h-[2px] w-[35%] min-w-[35%] bg-black'/>
                     <h1 className=' text-black text-3xl md:text-5xl my-5'>{speaker}/5</h1>
-                    <hr className='md:h-[200px] md:w-[2px] md:min-w-[2px] min-w-[100%] bg-black'/>
+                    <hr className='md:h-[200px] md:w-[2px] md:min-w-[2px] h-[2px] w-[35%] min-w-[35%] bg-black'/>
                     <p onClick={handleInc} className='transform md:rotate-90 rotate-0 text-4xl md:text-5xl mb-1 md:mb-0 md:ml-3 hover:cursor-pointer'>&gt;</p>
                 </div>
                 <div className='col-span-5'>

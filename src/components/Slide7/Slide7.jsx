@@ -126,7 +126,7 @@ const Slide7 = () => {
   return (
     <div ref={componentRef} id="form" className='component md:ml-12 relative z-30 h-screen w-[95%]'>
         <div className='flex md:flex-row flex-col'>
-            <div className='bg-white px-5 py-10 md:w-[30%]'>
+            <div className='bg-white px-5 py-10 md:w-[30%] w-screen'>
                 <h2 className='text-center font-semibold md:text-4xl text-3xl'>Register</h2>
                 <div className='my-10 grid'>
                     <label htmlFor="" className='text-black text-left mr-3'>Name</label>
