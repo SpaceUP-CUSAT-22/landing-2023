@@ -66,14 +66,14 @@ const Slide2 = () => {
     <div ref={componentRef} id="events" className={`component md:mt-20 md:h-[100%] md:min-h-screen relative z-30 max-w-full overflow-hidden`}>
       <div className='grid md:grid-cols-5 grid-cols-1'>
         <div className={`${animate && !isMobile ? 'fade' : 'md:hidden' } md:fixed top-0 z-20 col-span-1 h-[100%] bg-black md:px-40 py-10 bg-vector`}>
-          <h1 class={`${animate ? 'fade' : 'hidden' } text-white japanese flex justify-center md:flex-col items-center md:mt-[20vh]`}>
+          <h1 className={`${animate ? 'fade' : 'hidden' } text-white japanese flex justify-center md:flex-col items-center md:mt-[20vh]`}>
             <hr className='border-[1.5px] md:rotate-0 rotate-90 md:w-[100px] w-[50px] my-5' />
-            <span class="text-3xl">E</span>
-            <span class="text-3xl">V</span>
-            <span class="text-3xl">E</span>
-            <span class="text-3xl">N</span>
-            <span class="text-3xl">T</span>
-            <span class="text-3xl">S</span>
+            <span className="text-3xl">E</span>
+            <span className="text-3xl">V</span>
+            <span className="text-3xl">E</span>
+            <span className="text-3xl">N</span>
+            <span className="text-3xl">T</span>
+            <span className="text-3xl">S</span>
             <hr className='border-[1.5px] md:rotate-0 rotate-90 md:w-[100px] w-[50px] my-5' />
           </h1>
         </div>

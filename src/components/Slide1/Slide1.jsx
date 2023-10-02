@@ -6,6 +6,7 @@ import arch from '../../assets/arch.png'
 import shuttle from '../../assets/shuttle.png'
 import './style.css'
 import { useStateContext } from "../../context/SateContext";
+import { Link } from "react-router-dom";
 
 
 
@@ -73,8 +74,8 @@ const Slide1 = () => {
         {/* adjust height and width and scale duration in css later */}
         </div>
       </div>
-      <a href="/register" className="md:hidden flex justify-center mt-[310px]">
-        <button className='bg-[#E51F24] text-white px-5 py-3'>BUY TICKETS</button>
+      <a href="/register" className="md:hidden flex justify-center relative z-30 mt-[310px]">
+        <button className='bg-[#E51F24] text-white px-5 py-3 quicksand font-semibold'>BUY TICKETS</button>
       </a>
       <div className={`fixed bottom-0 left-0 w-full flex justify-center items-center`}>
         <img
