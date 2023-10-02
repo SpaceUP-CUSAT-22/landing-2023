@@ -182,7 +182,7 @@ const Slide2 = () => {
               <h1 className='text-black text-6xl -rotate-90 japanese'>1940</h1>
             </div>
           </div>
-          <div className='flex max-w-full overflow-x-auto overflow-y-hidden md:flex-wrap'>
+          <div className='flex md:hidden max-w-full overflow-x-auto overflow-y-hidden md:flex-wrap'>
             <div onClick={() => {
               setDetails(true)
               setChosenEvent(0)
