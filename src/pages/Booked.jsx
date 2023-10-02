@@ -16,7 +16,7 @@ const Booked = () => {
             </a>
         </div> 
         <div className='flex flex-col justify-center'>
-            <h1 className='text-center text-black text-4xl md:text-6xl my-10'>You've successfully booked a ticket!</h1>
+            <h1 className='text-center text-black text-4xl md:text-6xl my-10'>You've successfully booked the ticket!</h1>
             <p className='text-center text-black text-3xl md:text-5xl'><span className='text-[#E51F24] font-bold'>{code}</span> is your code, keep it safely!</p>
         </div> 
             {/* <h1 className='text-center font-semibold my-10 md:text-4xl text-3xl'>Keep a screenshot of this ticket and keet it safely!</h1>
