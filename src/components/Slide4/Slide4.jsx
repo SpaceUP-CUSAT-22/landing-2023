@@ -82,7 +82,7 @@ const Slide4 = () => {
                   <div className='ml-[400px] bg-blue-900 py-5 px-5 flex justify-center h-[80px] w-[90px]'>
                     <p className='text-black'>Break</p>
                   </div>
-                  <div className='bg-zinc-500 py-5 px-5 flex justify-center h-[80px] w-[390px]'>
+                  <div className='opacity-0 bg-zinc-500 py-5 px-5 flex justify-center h-[80px] w-[390px]'>
                     <p className='text-black'>Prep</p>
                   </div>
                   <div className='bg-green-500 py-5 px-5 flex justify-center h-[80px] w-[390px]'>
@@ -96,7 +96,7 @@ const Slide4 = () => {
                   <p className='text-black'>Venue2</p>
                 </div>
                 <div className='flex ml-[650px]'>
-                  <div className='bg-zinc-500 py-7 flex justify-center h-[80px] w-[200px]'>
+                  <div className='opacity-0 bg-zinc-500 py-7 flex justify-center h-[80px] w-[200px]'>
                     <p className='text-black'>Games Setting up</p>
                   </div>
                   <div className='ml-[210px] bg-cyan-500 py-7 px-5 flex justify-center h-[80px] w-[190px]'>

@@ -9,7 +9,6 @@ import Register from "./pages/Register"
 function App() {
   const {slide, setBlack, black} = useStateContext()
   React.useEffect(() => {
-    console.log(slide)
     if(slide == '#events' || slide == '#info' || slide == '#plan'){
       setBlack(true)
     }else{
