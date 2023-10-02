@@ -4,6 +4,8 @@ import tessy1 from '../../assets/photo1.png'
 import tessy2 from '../../assets/photo2.png'
 import brindha1 from '../../assets/brindha1.png'
 import brindha2 from '../../assets/brindha2.png'
+import vais1 from '../../assets/vais1.jpeg'
+import vais2 from '../../assets/vais2.jpeg'
 import kerala from '../../assets/kerala.png'
 import right_tree from '../../assets/right_tree.png'
 import pattern from '../../assets/Pattern 01.png'
@@ -50,13 +52,13 @@ const Slide3 = () => {
             subname2: "V",
         },
         {
-            name: "Vyshakan Thampi",
+            name: "Vaisakhan Thampi",
             designation: "A versatile educator, researcher, and popular science YouTuber",
             location: "Kerala, India",
             desc: "We are pleased to introduce Vaisakhan Thampi, a multi-talented educator, researcher, and popular science YouTuber, as one of our esteemed speakers at SpaceUp CUSAT 2023. With a deep-rooted passion for science and education, Vaisakhan wears many hats in his career. He is not only an Assistant Professor in Physics at M G College, Thiruvananthapuram but also holds a PhD in Materials Science from the National Institute for Interdisciplinary Science and Technology (NIIST). Vaisakhan's scholarly contributions are commendable, having published seven research articles, authored five popular science books, and contributed to numerous articles in newspapers and magazines. Vaisakhan Thampi's multifaceted expertise and passion for science communication promise to make his presentation at SpaceUp CUSAT on October 14, 2023, an enlightening and engaging experience for all attendees.",
-            img1: brindha1,
-            img2: brindha2,
-            subname1: "Vyshakan",
+            img1: vais1,
+            img2: vais2,
+            subname1: "Vaisakhan",
             subname2: "Thampi",
         }
     ]
@@ -109,10 +111,10 @@ const Slide3 = () => {
                                 <h1 className='quicksand text-2xl md:text-left text-center'>{speakers[speaker-1].designation}</h1>
                                 <div className='my-10 grid md:grid-cols-2 grid-cols-1'>
                                     <div className='grid md:grid-rows-2'>
-                                        <img src={speakers[speaker-1].img1} alt='tessy1' className='md:w-[85%] h-[100%]' />
-                                        <img src={speakers[speaker-1].img2} alt='tessy1' className='md:w-[85%] h-[100%]' />
+                                        <img src={speakers[speaker-1].img1} alt='tessy1' className='md:w-[100%] h-[100%]' />
+                                        <img src={speakers[speaker-1].img2} alt='tessy1' className='md:w-[100%] h-[100%]' />
                                     </div>
-                                    <div className='md:block hidden'>
+                                    <div className='ml-5 md:block hidden'>
                                         <pre><h1 className='text-xl ml-5 my-5 quicksand'>Kerala, India</h1> </pre>
                                         <img src={kerala} alt='kerala' className='h-[350px]' />
                                     </div>
