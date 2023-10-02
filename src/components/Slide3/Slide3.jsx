@@ -111,8 +111,8 @@ const Slide3 = () => {
                                 <h1 className='quicksand text-2xl md:text-left text-center'>{speakers[speaker-1].designation}</h1>
                                 <div className='my-10 grid md:grid-cols-2 grid-cols-1'>
                                     <div className='grid md:grid-rows-2'>
-                                        <img src={speakers[speaker-1].img1} alt='tessy1' className='md:w-[100%] h-[100%]' />
-                                        <img src={speakers[speaker-1].img2} alt='tessy1' className='md:w-[100%] h-[100%]' />
+                                        <img src={speakers[speaker-1].img1} alt='tessy1' className='md:w-[100%] h-[80%]' />
+                                        <img src={speakers[speaker-1].img2} alt='tessy1' className='md:w-[100%] h-[90%]' />
                                     </div>
                                     <div className='ml-5 md:block hidden'>
                                         <pre><h1 className='text-xl ml-5 my-5 quicksand'>Kerala, India</h1> </pre>
