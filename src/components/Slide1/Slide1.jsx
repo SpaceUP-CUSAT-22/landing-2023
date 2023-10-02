@@ -53,6 +53,7 @@ const Slide1 = () => {
               Spa<span className="text-white">ceupcu</span>sat
             </h1>
           </div>
+          {/* <p className="text-white quicksand relative z-20 -mt-10">Indias largest space un-conference</p> */}
         </div>
         <div className='hidden md:flex mt-[-180px]'>
           <img src={right_tree} alt='right tree' className='h-24 lg:h-48 animate-right' />
@@ -72,6 +73,9 @@ const Slide1 = () => {
         {/* adjust height and width and scale duration in css later */}
         </div>
       </div>
+      <a href="/register" className="md:hidden flex justify-center mt-[310px]">
+        <button className='bg-[#E51F24] text-white px-5 py-3'>BUY TICKETS</button>
+      </a>
       <div className={`fixed bottom-0 left-0 w-full flex justify-center items-center`}>
         <img
           src={arch}

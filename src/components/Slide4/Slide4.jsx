@@ -1,9 +1,11 @@
 import React from 'react'
 import { useStateContext } from '../../context/SateContext';
+import './style.css'
 
 const Slide4 = () => {
   const {setSlide} = useStateContext()
   const componentRef = React.useRef(null);
+  const [animate, setAnimate] = React.useState(false)
   React.useEffect(() => {
     const handleScroll = () => {
       const element = componentRef.current;
@@ -11,8 +13,9 @@ const Slide4 = () => {
         const rect = element.getBoundingClientRect();
         if (rect.top < window.innerHeight-500 && rect.bottom >= 0) {
           setSlide('#plan')
+          setAnimate(true)
         } else {
-          
+          setAnimate(false)
         }
       }
     };
@@ -31,7 +34,7 @@ const Slide4 = () => {
           <h2 className='md:my-0 my-10 text-xl md:text-4xl text-white quicksand'>October 14th 2023</h2>
         </div>
         <div className='overflow-x-auto my-16'>
-          <div className='min-w-[2300px]'>
+          <div onWheel={() => setAnimate(false)} className={`${animate && 'slideRight'} min-w-[2250px]`}>
 
             <div className='inline-flex ml-[160px] items-center'>
               <h3 className='text-2xl font-light text-white mr-20'>8</h3>

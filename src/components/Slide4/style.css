@@ -1,0 +1,12 @@
+@keyframes smoothScroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+.slideRight{
+    animation: smoothScroll 60s infinite;
+}
