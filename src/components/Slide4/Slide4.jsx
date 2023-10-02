@@ -109,7 +109,7 @@ const Slide4 = () => {
                     <p className='text-white'>CANSAT Workshop (Aero in)</p>
                   </div>
                   <div className='bg-green-500 py-7 px-5 flex justify-center h-[80px] w-[390px]'>
-                    <p className='text-black'>Games (Popsicle birdge challenge)</p>
+                    <p className='text-black'>Games (Popsicle bridge challenge)</p>
                   </div>
                 </div>
               </div>
