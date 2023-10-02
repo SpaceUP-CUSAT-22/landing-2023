@@ -125,22 +125,22 @@ const Register = () => {
     }
   return (
     <>
-        <div ref={componentRef} id="form" className='component md:ml-12 relative z-30 h-screen w-[95%]'>
+        <div ref={componentRef} id="form" className='component md:ml-7 relative z-30 h-screen w-[95%]'>
             <div className='flex md:flex-row flex-col'>
-                <div className='bg-white px-5 py-10 md:w-[30%] w-screen'>
+                {!next && <div className='bg-white px-5 py-10 md:w-[30%] w-screen'>
                     <h2 className='text-center font-semibold md:text-4xl text-3xl'>Register</h2>
                     <div className='my-10 grid'>
                         <label htmlFor="" className='text-black text-left mr-3'>Name</label>
-                        <input name="name" onChange={handleInputChange} placeholder="Enter name" className='mb-5 px-5 py-3 rounded-[5px] border-[1.5px] border-zinc-500 ' />
+                        <input value={formData.name} name="name" onChange={handleInputChange} placeholder="Enter name" className='mb-5 px-5 py-3 rounded-[5px] border-[1.5px] border-zinc-500 ' />
                         
                         <label htmlFor="" className='text-black text-left mr-3'>Email</label>
-                        <input name="email" onChange={handleInputChange} type="email" placeholder="Enter email" className='mb-5 px-5 py-3 rounded-[5px] border-[1.5px] border-zinc-500 ' />
+                        <input value={formData.email} name="email" onChange={handleInputChange} type="email" placeholder="Enter email" className='mb-5 px-5 py-3 rounded-[5px] border-[1.5px] border-zinc-500 ' />
                         
                         <label htmlFor="" className='text-black text-left mr-3'>Phone</label>
-                        <input name="phone" onChange={handleInputChange} type="text" placeholder="Enter phone" className='mb-5 px-5 py-3 rounded-[5px] border-[1.5px] border-zinc-500 ' />
+                        <input value={formData.phone} name="phone" onChange={handleInputChange} type="text" placeholder="Enter phone" className='mb-5 px-5 py-3 rounded-[5px] border-[1.5px] border-zinc-500 ' />
                         
                         <label htmlFor="" className='text-black text-left mr-3'>Year of Study</label>
-                        <input name="yearOfStudy" onChange={handleInputChange} type="number" placeholder="Enter year of study" className='mb-5 px-5 py-3 rounded-[5px] border-[1.5px] border-zinc-500 ' />
+                        <input value={formData.yearOfStudy} name="yearOfStudy" onChange={handleInputChange} type="number" placeholder="Enter year of study" className='mb-5 px-5 py-3 rounded-[5px] border-[1.5px] border-zinc-500 ' />
                         
                         <label htmlFor="" className='text-black text-left mr-3'>Are you from CUSAT?</label>
                         <div className='flex'>
@@ -155,16 +155,16 @@ const Register = () => {
                         </div>
 
                         <label htmlFor="" className='text-black text-left mr-3'>Place</label>
-                        <input name="place" onChange={handleInputChange} type="text" placeholder="Enter Place" className='mb-5 px-5 py-3 rounded-[5px] border-[1.5px] border-zinc-500 ' />
+                        <input value={formData.place} name="place" onChange={handleInputChange} type="text" placeholder="Enter Place" className='mb-5 px-5 py-3 rounded-[5px] border-[1.5px] border-zinc-500 ' />
 
                         <label htmlFor="" className='text-black text-left mr-3'>Referral Code</label>
-                        <input name="referralCode" onChange={handleInputChange} type="text" placeholder="Enter Referral Code" className='mb-5 px-5 py-3 rounded-[5px] border-[1.5px] border-zinc-500 ' />
+                        <input value={formData.referralCode} name="referralCode" onChange={handleInputChange} type="text" placeholder="Enter Referral Code" className='mb-5 px-5 py-3 rounded-[5px] border-[1.5px] border-zinc-500 ' />
                         <p className='text-black text-lg my-5'>*Refreshments and lunch included</p>
                         <button onClick={handleNext} className='px-10 py-3 text-white bg-[#E51F24] text-center'>NEXT</button>
                         {error && <p className='text-red-500 text-xl my-5 font-bold text-center'>{error}</p>}
 
                     </div>
-                </div>    
+                </div> }   
                 {next && 
                 <div className='md:ml-20 bg-white px-5 py-10 h-full'>
                     <h1 className='text-black font-bold text-center md:text-4xl text-3xl'>₹{formData.isSEDSMember == "YES" ? '249' : formData.isFromCUSAT == 'YES' ? '299' : '349'}</h1>
@@ -173,7 +173,7 @@ const Register = () => {
                     <label htmlFor="" className='text-black text-left mr-3'>UPI Screenshot</label>
                     <input name="file" type="file" onChange={(e) => handleFileChange(e)} className='mb-5 px-5 py-3 rounded-[5px] border-[1.5px] border-zinc-500 ' />
                     <div className='flex my-5'>
-                        <button className='px-7 py-3 border-[1.5px] border-black mr-3 border-[1.5px] border-black'>Back</button>
+                        <button onClick={() => setNext(false)} className='px-7 py-3 border-[1.5px] border-black mr-3 border-[1.5px] border-black'>Back</button>
                         <button onClick={handleSubmit} className='px-7 py-3 border-[1.5px] border-black bg-[#E51F24] text-white border-none'>Submit</button>
                     </div>
                 </div>}

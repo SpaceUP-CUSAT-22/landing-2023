@@ -1,6 +1,12 @@
 import React from 'react'
 import { useStateContext } from '../../context/SateContext';
 import '../Slide2/style.css'
+import gallery1 from '../../assets/gallery1.jpeg'
+import gallery2 from '../../assets/gallery2.jpeg'
+import gallery3 from '../../assets/gallery3.jpeg'
+import gallery4 from '../../assets/gallery4.jpg'
+import gallery5 from '../../assets/gallery5.jpg'
+import gallery6 from '../../assets/gallery6.jpeg'
 
 const Slide5 = () => {
   const componentRef = React.useRef(null);
@@ -27,20 +33,20 @@ const Slide5 = () => {
   }, []);
   return (
     // component class is compulsory 
-    <div id="images" ref={componentRef} className="component bg-white relative z-30 md:h-screen h-[1200px] w-full">
-      <h1 className="md:text-5xl text-4xl absolute z-10 md:left-20 left-10 top-16  text-[#DEDEDE] font-bold rubik md:w-[200px] text-left">Students Space Summit 2023</h1>
-      <div className="h-full md:absolute relative z-20 md:left-40 md:px-0 px-5 md:top-52 top-40 md:flex justify-center">
-        <div className="grid grid-cols-1 md:ml-0 ml-10">
-          <img src="./images/image-2.png" alt="" className={`${animate ? 'fade' : 'hidden'} md:my-0 my-10`} />
-          <img src="./images/demo-speaker.png" alt="" className={`${animate ? 'fadeSlow' : 'hidden'}`} />
+    <div id="images" ref={componentRef} className="component bg-white relative z-30 py-10 md:min-h-[1000px] md:h-[1000px] pb-20 h-[2400px] w-full">
+      <h1 className="text-5xl ml-20 text-4xl z-10 text-[#DEDEDE] font-bold rubik md:w-[200px] text-left">GALLERY</h1>
+      <div className="md:ml-20 md:mt-20 mt-10 relative z-20 md:px-0 px-5 md:flex justify-center">
+        <div className="grid grid-cols-1 md:ml-0">
+          <img src={gallery1} alt="" className={`${animate ? 'fade' : 'hidden'} md:my-0 my-10`} />
+          <img src={gallery2} alt="" className={`${animate ? 'fadeSlow' : 'hidden'}`} />
         </div>
         <div className="grid md:ml-11 md:my-0 mt-10 grid-cols-1">
-          <img src="./images/wide-image.png" alt="" className={`${animate ? 'slideDown' : 'hidden'}`} />
-          <div className={`${animate ? 'slideUp' : 'hidden'} md:ml-20 mt-6 grid grid-cols-2`}>
-            <img src="./images/standard-image.png" alt="" />
-            <img src="./images/standard-image.png" alt="" />
-            <img src="./images/standard-image2.png" alt="" />
-            <img src="./images/standard-image2.png" alt="" />
+          <img src={gallery3} alt="" className={`${animate ? 'slideDown' : 'hidden'} w-[250px]`} />
+          <div className={`${animate ? 'slideUp' : 'hidden'} md:ml-20 mt-6 grid md:grid-cols-2 grid-cols-1`}>
+            <img src={gallery4} className='md:mb-0 mb-5' alt="" />
+            <img src={gallery2} className='md:mb-0 mb-5' alt="" />
+            <img src={gallery6} className='md:mb-0 mb-5' alt="" />
+            <img src={gallery5} className='md:mb-0 mb-5' alt="" />
           </div>
         </div>
         <div className="hidden ml-4 border-l-2 border-gray-400 pl-4 md:flex flex-row">
