@@ -58,7 +58,7 @@ const Slide6 = () => {
                     <img
                         src={logo}
                         alt="logo"
-                        className="h-48 -mb-10"
+                        className="hidden h-48 -mb-10"
                     />
                     <h1 className="text-white text-xl font-normal japanese">SPACEUP CUSAT</h1>
                 </div>
