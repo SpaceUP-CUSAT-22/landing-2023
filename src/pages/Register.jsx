@@ -157,7 +157,7 @@ const Register = () => {
                         <label htmlFor="" className='text-black text-left mr-3'>Place</label>
                         <input value={formData.place} name="place" onChange={handleInputChange} type="text" placeholder="Enter Place" className='mb-5 px-5 py-3 rounded-[5px] border-[1.5px] border-zinc-500 ' />
 
-                        <label htmlFor="" className='text-black text-left mr-3'>Referral Code</label>
+                        <label htmlFor="" className='text-black text-left mr-3'>Referral Code <span className='font-semibold'>(optional)</span> </label>
                         <input value={formData.referralCode} name="referralCode" onChange={handleInputChange} type="text" placeholder="Enter Referral Code" className='mb-5 px-5 py-3 rounded-[5px] border-[1.5px] border-zinc-500 ' />
                         <p className='text-black text-lg my-5'>*Refreshments and lunch included</p>
                         <button onClick={handleNext} className='px-10 py-3 text-white bg-[#E51F24] text-center'>NEXT</button>
