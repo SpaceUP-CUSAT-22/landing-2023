@@ -62,7 +62,7 @@ const Register = () => {
 
     const sendEmail = async(name, code, email) => {
       await emailjs.send("service_6uv90nr","template_9qfmu1d",{
-        message: `Hey ${formData.name}!, we are delighted to confirm your registration for the SpaceUp CUSAT event scheduled for October 14th, from 8:00 AM to 7:00 PM at CUSAT.
+        message: `Hey ${name}!, we are delighted to confirm your registration for the SpaceUp CUSAT event scheduled for October 14th, from 8:00 AM to 7:00 PM at CUSAT.
         \n\n
         Please keep the following event details in mind:
         \n\n
