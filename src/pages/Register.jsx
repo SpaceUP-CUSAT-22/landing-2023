@@ -8,7 +8,7 @@ import { getAnalytics } from "firebase/analytics";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import emailjs from '@emailjs/browser';
 
-emailjs.init('user_MzVXLN7rOfB1swxEYSxO0')
+emailjs.init('Hb_PKHYL7lZDRKHv9')
 
 const firebaseConfig = {
   apiKey:  import.meta.env.VITE_apiKey,
@@ -60,7 +60,46 @@ const Register = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    const sendEmail = async(name, code, email) => {
+      await emailjs.send("service_6uv90nr","template_9qfmu1d",{
+        message: `Hey ${formData.name}!, we are delighted to confirm your registration for the SpaceUp CUSAT event scheduled for October 14th, from 8:00 AM to 7:00 PM at CUSAT.
+        \n\n
+        Please keep the following event details in mind:
+        \n\n
+        Event Date: October 14, 2023\n
+        Event Time: 8:00 AM - 7:00 PM\n
+        Venue: CUSAT, kochi\n
+        \n\n
+        You will need to present the following code at the event venue for entry:
+        \n\n
+        Your Event Code: ${code}
+        \n\n
+        Please make sure to have this code readily available on your mobile device or in print form to streamline your registration process.
+        \n\n
+        Should you have any inquiries or require further assistance, do not hesitate to contact us at.
+        \n\n
+        Fimil:+91 9544664678\n
+        Yadu:+91 9895223267\n
+        \n\n
+        We appreciate your participation and look forward to sharing an exciting and informative day with you at SpaceUp CUSAT!
+        \n\n
+        Best regards,
+        \n\n
+        SpaceUP Team`,
+        toEmail: email,
+        }, "Hb_PKHYL7lZDRKHv9")
+        .then((result) => {
+          console.log(result);
+          // setEmail("");
+          // setMessage("");
+          // alert('Claim email sent succesfully')
+        }, (error) => {
+          console.log(error);
+        });
+    }
+
     const handleInputChange = (e) => {
+        // sendEmail("Fimil", "1234", "abhinavcv007@gmail.com")
         const { name, value } = e.target;
         setFormData({
           ...formData,
@@ -122,41 +161,7 @@ const Register = () => {
               const docRef = await addDoc(collection(db, "registeredUsers"), {
                 formData: formData,
               });
-              // await emailjs.send("service_6p7k38d","template_s87nuyi",{
-              //   message: `Hey ${formData.name}!, we are delighted to confirm your registration for the SpaceUp CUSAT event scheduled for October 14th, from 8:00 AM to 7:00 PM at CUSAT.
-              //   \n\n
-              //   Please keep the following event details in mind:
-              //   \n\n
-              //   Event Date: October 14, 2023\n
-              //   Event Time: 8:00 AM - 7:00 PM\n
-              //   Venue: CUSAT, kochi\n
-              //   \n\n
-              //   You will need to present the following code at the event venue for entry:
-              //   \n\n
-              //   Your Event Code: ${formData.code}
-              //   \n\n
-              //   Please make sure to have this code readily available on your mobile device or in print form to streamline your registration process.
-              //   \n\n
-              //   Should you have any inquiries or require further assistance, do not hesitate to contact us at.
-              //   \n\n
-              //   Fimil:+91 9544664678\n
-              //   Yadu:+91 9895223267\n
-              //   \n\n
-              //   We appreciate your participation and look forward to sharing an exciting and informative day with you at SpaceUp CUSAT!
-              //   \n\n
-              //   Best regards,
-              //   \n\n
-              //   SpaceUP Team`,
-              //   toEmail: formData.email,
-              //   })
-              //   .then((result) => {
-              //     console.log(result);
-              //     // setEmail("");
-              //     // setMessage("");
-              //     // alert('Claim email sent succesfully')
-              //   }, (error) => {
-              //     console.log(error);
-              //   });
+              sendEmail(formData.name, formData.code, formData.email)
               console.log("Document written with ID: ", docRef.id);
               window.location.replace('/booked')
             }else{
