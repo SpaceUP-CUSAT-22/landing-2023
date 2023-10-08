@@ -74,10 +74,10 @@ const Slide4 = () => {
                     <p className='text-black'>Innaugral Ceremony</p>
                   </div>
                   <div className='bg-[#FBAD19] py-5 px-5 flex justify-center h-[80px] w-[190px]'>
-                    <p className='text-black'>Tessy Thomas Talk Session</p>
+                    <p className='text-black'>Dr. Tessy Thomas Talk Session</p>
                   </div>
                   <div className='bg-orange-500 py-5 px-5 flex justify-center h-[80px] w-[200px]'>
-                    <p className='text-black'>Brinda Talk Session</p>
+                    <p className='text-black'>Dr. Brindha Talk Session</p>
                   </div>
                   <div className='ml-[400px] bg-blue-900 py-5 px-5 flex justify-center h-[80px] w-[90px]'>
                     <p className='text-black'>Break</p>
@@ -123,7 +123,7 @@ const Slide4 = () => {
                     <p className='text-black'>Lunch break</p>
                   </div>
                   <div className='bg-orange-500 py-7 px-5 flex justify-center h-[80px] w-[190px]'>
-                    <p className='text-black'>Vyshakhan Thambi</p>
+                    <p className='text-black'>Dr. Vaisakhan Thambi</p>
                   </div>
                   <div className='bg-blue-900 py-7 px-5 flex justify-center h-[80px] w-[90px]'>
                     <p className='text-black'>Break</p>
