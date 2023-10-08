@@ -52,7 +52,7 @@ const Slide3 = () => {
             subname2: "V",
         },
         {
-            name: "Vaisakhan Thampi",
+            name: "Dr. Vaisakhan Thampi",
             designation: "A versatile educator, researcher, and popular science YouTuber",
             location: "Kerala, India",
             desc: "We are pleased to introduce Vaisakhan Thampi, a multi-talented educator, researcher, and popular science YouTuber, as one of our esteemed speakers at SpaceUp CUSAT 2023. With a deep-rooted passion for science and education, Vaisakhan wears many hats in his career. He is not only an Assistant Professor in Physics at M G College, Thiruvananthapuram but also holds a PhD in Materials Science from the National Institute for Interdisciplinary Science and Technology (NIIST). Vaisakhan's scholarly contributions are commendable, having published seven research articles, authored five popular science books, and contributed to numerous articles in newspapers and magazines. Vaisakhan Thampi's multifaceted expertise and passion for science communication promise to make his presentation at SpaceUp CUSAT on October 14, 2023, an enlightening and engaging experience for all attendees.",
