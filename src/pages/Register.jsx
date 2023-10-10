@@ -175,10 +175,20 @@ const Register = () => {
     <>
         <div ref={componentRef} id="form" className='component md:ml-7 relative z-30 h-screen w-[95%]'>
             <div className='flex md:flex-row flex-col'>
-                {!next && <div className='bg-white px-5 py-10 md:w-[30%] w-screen'>
-                    <h2 className='text-center font-semibold md:text-4xl text-3xl'>Register</h2>
+                {/* {!next &&  */}
+                 <div className='bg-white px-5 py-10 w-screen'>
+                    <h2 className='text-center font-semibold md:text-4xl text-3xl'>Registration Closed</h2>
                     <div className='my-10 grid'>
-                        <label htmlFor="" className='text-black text-left mr-3'>Name</label>
+                      <p className='text-center font-semibold md:text-xl text-l'>
+                      Because of your overwhelming support.
+                      All the tickets have been SOLD OUT
+                      </p>
+                      <br />
+                      <br />
+                      <h3 className='text-center font-semibold md:text-xl text-3xl'>
+                      See You All for SpaceUP CUSAT 2024
+                      </h3>
+                        {/*<label htmlFor="" className='text-black text-left mr-3'>Name</label>
                         <input value={formData.name} name="name" onChange={handleInputChange} placeholder="Enter name" className='mb-5 px-5 py-3 rounded-[5px] border-[1.5px] border-zinc-500 ' />
                         
                         <label htmlFor="" className='text-black text-left mr-3'>Email</label>
@@ -209,11 +219,12 @@ const Register = () => {
                         <input value={formData.referralCode} name="referralCode" onChange={handleInputChange} type="text" placeholder="Enter Referral Code" className='mb-5 px-5 py-3 rounded-[5px] border-[1.5px] border-zinc-500 ' />
                         <p className='text-black text-lg my-5'>*Refreshments and lunch included</p>
                         <button onClick={handleNext} className='px-10 py-3 text-white bg-[#E51F24] text-center'>NEXT</button>
-                        {error && <p className='text-red-500 text-xl my-5 font-bold text-center'>{error}</p>}
+                        {error && <p className='text-red-500 text-xl my-5 font-bold text-center'>{error}</p>} */}
 
                     </div>
-                </div> }   
-                {next && 
+                </div> 
+                {/* }    */}
+                {/* {next && 
                 <div className='md:ml-20 bg-white px-5 py-10 h-full'>
                     <h1 className='text-black font-bold text-center md:text-4xl text-3xl'>₹{formData.isSEDSMember == "YES" ? '249' : formData.isFromCUSAT == 'YES' ? '299' : '349'}</h1>
                     {formData.isSEDSMember == "YES" ? <img className="w-[400px] my-10" src={twofournine} /> : formData.isFromCUSAT == 'YES' ? <img className="w-[400px] my-10" src={twoninenine} /> : <img className="w-[400px] my-10" src={threefournine} />}
@@ -225,7 +236,7 @@ const Register = () => {
                         <button onClick={handleSubmit} className='px-7 py-3 border-[1.5px] border-black bg-[#E51F24] text-white border-none'>Submit</button>
                         {error && <p className='text-red-500 text-xl my-5 font-bold text-center'>{error}</p>}
                     </div>
-                </div>}
+                </div>} */}
             </div>    
         </div>
         <div className='component'></div>
