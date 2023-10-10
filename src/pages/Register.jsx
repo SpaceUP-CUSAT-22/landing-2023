@@ -179,7 +179,7 @@ const Register = () => {
                  <div className='bg-white px-5 py-10 w-screen'>
                     <h2 className='text-center font-semibold md:text-4xl text-3xl'>Registration Closed</h2>
                     <div className='my-10 grid'>
-                      <p className='text-center font-semibold md:text-xl text-l'>
+                      <p className='text-center font-semibold md:text-xl text-xl'>
                       Because of your overwhelming support.
                       All the tickets have been SOLD OUT
                       </p>
